@@ -1,12 +1,100 @@
 <!DOCTYPE html>
-<html lang="ru">
-  <head>
-    <meta charset="utf-8">
-    <title>HTML Academy: Пинк</title>
-  </head>
-  <body>
+<html class="page" lang="ru">
 
-    <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/adaptive">HTML и CSS. Адаптивная вёрстка и автоматизация</a>».</p>
+<head>
+  <meta charset="utf-8">
+  <title>HTML Academy: Пинк</title>
+</head>
 
-  </body>
+<body class="page__body">
+  <header class="main-header">
+    <div class="main-header__wrapper">
+      <h1 class="visually-hidden">Пинк</h1>
+      <a class="main-header__logo" href="#"></a>
+      <nav class="main-nav">
+        <ul class="main-nav__list">
+          <li class="main-nav__item">
+            <a class="main-nav__link main-nav__link--current" href="index.html">главная</a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="catalog">Фотографии</a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="competition">конкурс</a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="https://htmlacademy.ru/intensive/adaptive">html academy</a>
+          </li>
+        </ul>
+        <button class="button-reset burger" aria-label="Открыть меню">
+          <span class="burger__line"></span>
+          <span class="burger__line"></span>
+          <span class="burger__line"></span>
+        </button>
+      </nav>
+    </div>
+  </header>
+
+  <main class="main-container">
+    <section class="intro">
+      <div class="intro__wrapper">
+        <div class="download-info">
+          <h2 class="download-info__title">Взгляните на жизнь иначе!</h2>
+        </div>
+        <a class="download-button" href="#">Скачать приложение</a>
+        <ul class="download-info__list">
+          <li class="download-info__item">Apple</li>
+          <li class="download-info__item">Android</li>
+          <li class="download-info__item">Microsoft</li>
+        </ul>
+        <p class="download-info__description">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
+      </div>
+    </section>
+
+    <section class="information">
+      <div class="information__wrapper">
+        <div class="slogan">
+          <p class="slogan__text">Устали от серости мегаполиса?</p>
+          <p class="slogan__text">Нам есть, что вам
+            предложить!</p>
+        </div>
+        <div class="features">
+          <ul class="features__list">
+            <li class="features__item">
+              <h3 class="features__title">Поднимает
+                настроение</h3>
+              <p class="features__description">Приложение позволит вам победить осеннюю хандру и депрессию буквально в
+                несколько кликов!</p>
+            </li>
+            <li class="features__item">
+              <h3 class="features__title">Меняет мир
+                вокруг</h3>
+              <p class="features__description">Сделайте снимок и
+                украсьте его смайликом
+                или текстовой подписью, чтобы усилить эффект</p>
+            </li>
+            <li class="features__item">
+              <h3 class="features__title">Заводит
+                новых друзей</h3>
+              <p class="features__description">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями
+                и заводите новых</p>
+            </li>
+          </ul>
+        </div>
+        <div class="effect">
+          <div class="effect__wrapper">
+            <h3 class="effect__title">Эффект на 24 часа!</h3>
+            <p class="effect__description">Британские ученые провели исследования и доказали,
+              что положительный эффект от использования приложения длится целые сутки!</p>
+            <a class="effect__more" href="#">Узнать больше об исследовании</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="main-footer"></footer>
+
+</body>
+
 </html>
