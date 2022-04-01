@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html class="page" lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <title>HTML Academy: Пинк</title>
+  <base href="https://htmlacademy-adaptive.github.io/22988-pink-25/2/">
+</head>
+
+<body class="page__body">
+  <header class="main-header">
+    <div class="main-header__wrapper">
+      <h1 class="visually-hidden">Пинк</h1>
+      <a class="main-header__logo" href="#"></a>
+      <nav class="main-nav">
+        <ul class="main-nav__list">
+          <li class="main-nav__item">
+            <a class="main-nav__link main-nav__link--current" href="index.html">главная</a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="catalog">Фотографии</a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="competition">конкурс</a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="https://htmlacademy.ru/intensive/adaptive">html academy</a>
+          </li>
+        </ul>
+        <button class="button-reset burger" aria-label="Открыть меню">
+          <span class="burger__line"></span>
+          <span class="burger__line"></span>
+          <span class="burger__line"></span>
+        </button>
+      </nav>
+    </div>
+  </header>
+
+  <main class="main-container">
+    <section class="intro">
+      <div class="intro__wrapper">
+        <div class="download-info">
+          <h2 class="download-info__title">Взгляните на жизнь иначе!</h2>
+        </div>
+        <a class="download-button" href="#">Скачать приложение</a>
+        <ul class="download-info__list">
+          <li class="download-info__item">
+            <a class="download-info__link" href="#">Apple</a>
+          </li>
+          <li class="download-info__item">
+            <a class="download-info__link" href="#">Android</a>
+          </li>
+          <li class="download-info__item">
+            <a class="download-info__link" href="#">Microsoft</a>
+          </li>
+        </ul>
+        <p class="download-info__description">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
+      </div>
+    </section>
+
+    <section class="information">
+      <div class="information__wrapper">
+        <div class="slogan">
+          <p class="slogan__text">Устали от серости мегаполиса?</p>
+          <p class="slogan__text">Нам есть, что вам
+            предложить!</p>
+        </div>
+        <div class="features">
+          <ul class="features__list">
+            <li class="features__item">
+              <h3 class="features__title">Поднимает
+                настроение</h3>
+              <p class="features__description">Приложение позволит вам победить осеннюю хандру и депрессию буквально в
+                несколько кликов!</p>
+            </li>
+            <li class="features__item">
+              <h3 class="features__title">Меняет мир
+                вокруг</h3>
+              <p class="features__description">Сделайте снимок и
+                украсьте его смайликом
+                или текстовой подписью, чтобы усилить эффект</p>
+            </li>
+            <li class="features__item">
+              <h3 class="features__title">Заводит
+                новых друзей</h3>
+              <p class="features__description">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями
+                и заводите новых</p>
+            </li>
+          </ul>
+        </div>
+        <div class="effect">
+          <div class="effect__wrapper">
+            <h3 class="effect__title">Эффект на 24 часа!</h3>
+            <p class="effect__description">Британские ученые провели исследования и доказали,
+              что положительный эффект от использования приложения длится целые сутки!</p>
+            <a class="effect__more" href="#">Узнать больше об исследовании</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="reviews">
+      <div class="reviews__wrapper slider">
+        <h2 class="visually-hidden">Отзывы о приложении Pink</h2>
+        <div class="reviews__list slider__list">
+          <blockquote class="reviews__item slider__item">
+            <p class="reviews__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на
+              привычные серые вещи! А еще я познакомился со своей будущей женой в
+              комментариях к выложенной фотографии!»</p>
+            <cite class="reviews__author">Николай Петров</cite>
+            <span class="reviews__author-info">25 лет, водитель трамвая</span>
+          </blockquote>
+          <blockquote class="reviews__item slider__item">
+            <p class="reviews__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на
+              привычные серые вещи! А еще я познакомился со своей будущей женой в
+              комментариях к выложенной фотографии!»</p>
+            <cite class="reviews__author">Владислав Иванов</cite>
+            <span class="reviews__author-info">27 лет, водитель трамвая</span>
+          </blockquote>
+          <blockquote class="reviews__item slider__item">
+            <p class="reviews__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на
+              привычные серые вещи! А еще я познакомился со своей будущей женой в
+              комментариях к выложенной фотографии!»</p>
+            <cite class="reviews__author">Сергей Безруков</cite>
+            <span class="reviews__author-info">32 года, водитель трамвая</span>
+          </blockquote>
+          <button class="reviews__prev" type="button">Предыдущий отзыв</button>
+          <button class="reviews__next" type="button">Следующий отзыв</button>
+        </div>
+        <input class="reviews__input" type="radio" id="review-toggle1" name="review-toggle">
+        <input class="reviews__input" type="radio" id="review-toggle2" name="review-toggle">
+        <input class="reviews__input" type="radio" id="review-toggle3" name="review-toggle">
+        <p class="reviews__toggles slider__toggles">
+          <label class="reviews__lable" for="review-toggle1"></label>
+          <label class="reviews__lable" for="review-toggle2"></label>
+          <label class="reviews__lable" for="review-toggle3"></label>
+        </p>
+      </div>
+    </section>
+
+    <section class="tariffs">
+      <div class="tariffs__wrapper">
+        <div class="tariffs__table tariffs__slider">
+          <table class="table-pricing">
+            <thead class="table-pricing__header">
+              <tr>
+                <th class="table-pricing__item table-pricing__item--empty"></th>
+                <th class="table-pricing__item table-pricing__item--tariffs">База</th>
+                <th class="table-pricing__item table-pricing__item--tariffs table-pricing__item--hits">Стандарт</th>
+                <th class="table-pricing__item table-pricing__item--tariffs">Анлим</th>
+              </tr>
+              <tr>
+                <th class="table-pricing__item table-pricing__item--empty"></th>
+                <th class="table-pricing__item table-pricing__item--price">1,99 USD</th>
+                <th class="table-pricing__item table-pricing__item--price">3,99 USD</th>
+                <th class="table-pricing__item table-pricing__item--price">9,99 USD</th>
+              </tr>
+            </thead>
+            <tbody class="table-pricing__main">
+              <tr>
+                <th class="table-pricing__cell table-pricing__cell--function">Розовый фильтр</th>
+                <th class="table-pricing__cell table-pricing__cell-on" data-header="Розовый фильтр"></th>
+                <th class="table-pricing__cell table-pricing__cell-on" data-header="Розовый фильтр"></th>
+                <th class="table-pricing__cell table-pricing__cell-on" data-header="Розовый фильтр"></th>
+              </tr>
+              <tr>
+                <th class="table-pricing__cell table-pricing__cell--function">Смайлики</th>
+                <th class="table-pricing__cell table-pricing__cell-off" data-header="Смайлики"></th>
+                <th class="table-pricing__cell table-pricing__cell-on" data-header="Смайлики"></th>
+                <th class="table-pricing__cell table-pricing__cell-on" data-header="Смайлики"></th>
+              </tr>
+              <tr>
+                <th class="table-pricing__cell table-pricing__cell--function">Комментарии</th>
+                <th class="table-pricing__cell table-pricing__cell-off" data-header="Комментарии"></th>
+                <th class="table-pricing__cell table-pricing__cell-off" data-header="Комментарии"></th>
+                <th class="table-pricing__cell table-pricing__cell-on" data-header="Комментарии"></th>
+              </tr>
+            </tbody>
+          </table>
+          <input class="tariffs__input" type="radio" id="tariff-toggle1" name="tariff-toggle">
+          <input class="tariffs__input" type="radio" id="tariff-toggle2" name="tariff-toggle">
+          <input class="tariffs__input" type="radio" id="tariff-toggle3" name="tariff-toggle">
+          <p class="tariffs__control slider__contlor">
+            <label class="tariffs__lable" for="tariff-toggle1"></label>
+            <label class="tariffs__lable" for="tariff-toggle2"></label>
+            <label class="tariffs__lable" for="tariff-toggle3"></label>
+          </p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="main-footer">
+    <div class="contacts">
+      <div class="contacts__wrapper">
+        <h2 class="contacts__title">Остались вопросы?
+          Свяжитесь с нами!</h2>
+        <div class="ccontacts__list">
+          <dl class="contacts__item">
+            <dt class="contacts__heading">Звоните:</dt>
+            <dd class="contact__decription">
+              <a class="contact__phone" href="tel:+78155556666">+7 (812) 555-66-66</a>
+            </dd>
+          </dl>
+          <dl class="contacts__item">
+            <dt class="contacts__heading">Приезжайте в гости:</dt>
+            <dd class="contact__decription">ул. Большая Конюшенная, 19/8</dd>
+          </dl>
+          <dl class="contacts__item">
+            <dt class="contacts__heading">Пишите:</dt>
+            <dd class="contact__decription">
+              <a class="contact__mail" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
+            </dd>
+          </dl>
+        </div>
+        <div class="main-footer__map"></div>
+        <div class="main-footer__social">
+          <div class="main-footer__wrapper">
+            <div class="main-footer__logo"></div>
+            <ul class="social__list">
+              <li class="social__item">
+                <a class="social__link social__link-tw" href="#">Twitter</a>
+              </li>
+              <li class="social__item">
+                <a class="social__link social__link-fb" href="#">Facebook</a>
+              </li>
+              <li class="social__item">
+                <a class="social__link social__link-yb" href="#">YouTube</a>
+              </li>
+            </ul>
+            <div class="main-footer__copyright">
+              <span class="main-footer__copyright-text">Разработано</span>
+              <a class="main-footer__copyright-link" href="https://htmlacademy.ru/intensive/adaptive">HtmlAcademy</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+</body>
+
+</html>
