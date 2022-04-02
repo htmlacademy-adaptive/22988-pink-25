@@ -15,19 +15,19 @@
       <nav class="main-nav">
         <ul class="main-nav__list">
           <li class="main-nav__item">
-            <a class="main-nav__link main-nav__link--current" href="index.html">главная</a>
+            <a class="main-nav__link main-nav__link--current" href="index.html">Главная</a>
           </li>
           <li class="main-nav__item">
-            <a class="main-nav__link" href="catalog">Фотографии</a>
+            <a class="main-nav__link" href="catalog.html">Фотографии</a>
           </li>
           <li class="main-nav__item">
-            <a class="main-nav__link" href="competition">конкурс</a>
+            <a class="main-nav__link" href="competition.html">Конкурс</a>
           </li>
           <li class="main-nav__item">
-            <a class="main-nav__link" href="https://htmlacademy.ru/intensive/adaptive">html academy</a>
+            <a class="main-nav__link" href="https://htmlacademy.ru/intensive/adaptive">Html academy</a>
           </li>
         </ul>
-        <button class="button-reset burger" aria-label="Открыть меню">
+        <button class="main-nav__burger burger" aria-label="Открыть меню">
           <span class="burger__line"></span>
           <span class="burger__line"></span>
           <span class="burger__line"></span>
@@ -42,19 +42,19 @@
         <div class="download-info">
           <h2 class="download-info__title">Взгляните на жизнь иначе!</h2>
         </div>
-        <a class="download-button" href="#">Скачать приложение</a>
-        <ul class="download-info__list">
-          <li class="download-info__item">
-            <a class="download-info__link" href="#">Apple</a>
+        <a class="intro__download-button" href="#">Скачать приложение</a>
+        <ul class="intro__list">
+          <li class="intro__item">
+            <a class="intro__link" href="#">Apple</a>
           </li>
-          <li class="download-info__item">
-            <a class="download-info__link" href="#">Android</a>
+          <li class="intro__item">
+            <a class="intro__link" href="#">Android</a>
           </li>
-          <li class="download-info__item">
-            <a class="download-info__link" href="#">Microsoft</a>
+          <li class="intro__item">
+            <a class="intro__link" href="#">Microsoft</a>
           </li>
         </ul>
-        <p class="download-info__description">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
+        <p class="intro__description">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
       </div>
     </section>
 
@@ -131,17 +131,17 @@
         <input class="reviews__input" type="radio" id="review-toggle2" name="review-toggle">
         <input class="reviews__input" type="radio" id="review-toggle3" name="review-toggle">
         <p class="reviews__toggles slider__toggles">
-          <label class="reviews__lable" for="review-toggle1"></label>
-          <label class="reviews__lable" for="review-toggle2"></label>
-          <label class="reviews__lable" for="review-toggle3"></label>
+          <label class="reviews__label" for="review-toggle1"></label>
+          <label class="reviews__label" for="review-toggle2"></label>
+          <label class="reviews__label" for="review-toggle3"></label>
         </p>
       </div>
     </section>
 
     <section class="tariffs">
       <div class="tariffs__wrapper">
-        <h2 class="vusually-hidden">Тарифы приложения Pink</h2>
-        <div class="tariffs__table tariffs__slider">
+        <h2 class="visually-hidden">Тарифы приложения Pink</h2>
+        <div class="tariffs__table tariffs-slider">
           <table class="table-pricing">
             <thead class="table-pricing__header">
               <tr>
@@ -181,10 +181,10 @@
           <input class="tariffs__input" type="radio" id="tariff-toggle1" name="tariff-toggle">
           <input class="tariffs__input" type="radio" id="tariff-toggle2" name="tariff-toggle">
           <input class="tariffs__input" type="radio" id="tariff-toggle3" name="tariff-toggle">
-          <p class="tariffs__control slider__contlor">
-            <label class="tariffs__lable" for="tariff-toggle1"></label>
-            <label class="tariffs__lable" for="tariff-toggle2"></label>
-            <label class="tariffs__lable" for="tariff-toggle3"></label>
+          <p class="tariffs__control tariffs-slider__control">
+            <label class="tariffs__label" for="tariff-toggle1"></label>
+            <label class="tariffs__label" for="tariff-toggle2"></label>
+            <label class="tariffs__label" for="tariff-toggle3"></label>
           </p>
         </div>
       </div>
@@ -196,21 +196,21 @@
       <div class="contacts__wrapper">
         <h2 class="contacts__title">Остались вопросы?
           Свяжитесь с нами!</h2>
-        <div class="ccontacts__list">
+        <div class="contacts__list">
           <dl class="contacts__item">
             <dt class="contacts__heading">Звоните:</dt>
-            <dd class="contact__decription">
-              <a class="contact__phone" href="tel:+78155556666">+7 (812) 555-66-66</a>
+            <dd class="contacts__description">
+              <a class="contacts__phone" href="tel:+78155556666">+7 (812) 555-66-66</a>
             </dd>
           </dl>
           <dl class="contacts__item">
             <dt class="contacts__heading">Приезжайте в гости:</dt>
-            <dd class="contact__decription">ул. Большая Конюшенная, 19/8</dd>
+            <dd class="contacts__description">ул. Большая Конюшенная, 19/8</dd>
           </dl>
           <dl class="contacts__item">
             <dt class="contacts__heading">Пишите:</dt>
-            <dd class="contact__decription">
-              <a class="contact__mail" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
+            <dd class="contacts__description">
+              <a class="contacts__mail" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
             </dd>
           </dl>
         </div>
@@ -218,15 +218,15 @@
         <div class="main-footer__social">
           <div class="main-footer__wrapper">
             <div class="main-footer__logo"></div>
-            <ul class="social__list">
-              <li class="social__item">
-                <a class="social__link social__link-tw" href="#">Twitter</a>
+            <ul class="main-footer__list">
+              <li class="main-footer__item">
+                <a class="main-footer__link main-footer__link-tw" href="#">Twitter</a>
               </li>
-              <li class="social__item">
-                <a class="social__link social__link-fb" href="#">Facebook</a>
+              <li class="main-footer__item">
+                <a class="main-footer__link main-footer__link-fb" href="#">Facebook</a>
               </li>
-              <li class="social__item">
-                <a class="social__link social__link-yb" href="#">YouTube</a>
+              <li class="main-footer__item">
+                <a class="main-footer__link main-footer__link-yb" href="#">YouTube</a>
               </li>
             </ul>
             <div class="main-footer__copyright">
