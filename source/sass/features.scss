@@ -1,0 +1,22 @@
+.features {
+  background-color: var(--lightgrey-color);
+  background-image: url("../img/iphone-screen-3.png");
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.features__title {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 24px;
+  color: var(--dark-color);
+  text-align: center;
+}
+
+.features__description {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  text-align: center;
+  color: var(--darken-color);
+}

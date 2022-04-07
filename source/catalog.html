@@ -3,7 +3,9 @@
 
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>HTML Academy: Пинк</title>
+  <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body class="page__body">
@@ -12,7 +14,7 @@
       <h1 class="visually-hidden">Пинк</h1>
       <a class="main-header__logo" href="#"></a>
       <nav class="main-nav">
-        <ul class="main-nav__list">
+        <ul class="main-nav__list list-reset">
           <li class="main-nav__item">
             <a class="main-nav__link main-nav__link--current" href="index.html">Главная</a>
           </li>
@@ -42,7 +44,7 @@
     <section class="collection">
       <h2 class="visually-hidden">Галерея фотографий</h2>
       <div class="collection__title-content content-inner">
-        <p class="page-gallery__description">Взгляните на фотографии, которые выкладывают пользователи!
+        <p class="collection__description">Взгляните на фотографии, которые выкладывают пользователи!
           Видите, как не хватает ваших?</p>
       </div>
       <div class="collection__sticker">
@@ -63,7 +65,7 @@
           <span class="collection__likes-number">215</span>
         </footer>
       </article>
-      <ul class="collection__list">
+      <ul class="collection__list list-reset">
         <li class="collection__item">
           <picture class="collection__card-photo">
             <img class="collection__user-picture" src="./img/photo-1.jpg" alt="Изображение пользователя" width="300"
@@ -224,8 +226,8 @@
                   <div class="filter__toggle filter__toggle--contrast"></div>
                 </dd>
               </dl>
-              <button class="filter__load-button filter__load-button-submit" type="submit" value="Запостить"></button>
-              <button class="filter__load-button filter__load-button-reset" type="reset" value="Отмена"></button>
+              <button class="filter__load-button filter__load-button-submit" type="submit" value="Запостить">Запостить</button>
+              <button class="filter__load-button filter__load-button-reset" type="reset" value="Отмена">Отмена</button>
             </div>
           </div>
         </form>
@@ -239,7 +241,7 @@
         <div class="main-footer__social">
           <div class="main-footer__wrapper">
             <div class="main-footer__logo"></div>
-            <ul class="main-footer__list">
+            <ul class="main-footer__list list-reset">
               <li class="main-footer__item">
                 <a class="main-footer__link main-footer__link-tw" href="#">Twitter</a>
               </li>

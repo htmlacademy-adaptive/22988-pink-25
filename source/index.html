@@ -3,7 +3,9 @@
 
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>HTML Academy: Пинк</title>
+  <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body class="page__body">
@@ -12,7 +14,7 @@
       <h1 class="visually-hidden">Пинк</h1>
       <a class="main-header__logo" href="#"></a>
       <nav class="main-nav">
-        <ul class="main-nav__list">
+        <ul class="main-nav__list list-reset">
           <li class="main-nav__item">
             <a class="main-nav__link main-nav__link--current" href="index.html">Главная</a>
           </li>
@@ -42,15 +44,15 @@
           <h2 class="download-info__title">Взгляните на жизнь иначе!</h2>
         </div>
         <a class="intro__download-button" href="#">Скачать приложение</a>
-        <ul class="intro__list">
+        <ul class="intro__list list-reset">
           <li class="intro__item">
-            <a class="intro__link" href="#">Apple</a>
+            <a class="intro__link intro__link--apple" href="#">Apple</a>
           </li>
           <li class="intro__item">
-            <a class="intro__link" href="#">Android</a>
+            <a class="intro__link intro__link--android" href="#">Android</a>
           </li>
           <li class="intro__item">
-            <a class="intro__link" href="#">Microsoft</a>
+            <a class="intro__link intro__link--microsoft" href="#">Microsoft</a>
           </li>
         </ul>
         <p class="intro__description">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
@@ -65,7 +67,7 @@
             предложить!</p>
         </div>
         <div class="features">
-          <ul class="features__list">
+          <ul class="features__list list-reset">
             <li class="features__item">
               <h3 class="features__title">Поднимает
                 настроение</h3>
@@ -107,21 +109,21 @@
               привычные серые вещи! А еще я познакомился со своей будущей женой в
               комментариях к выложенной фотографии!»</p>
             <cite class="reviews__author">Николай Петров</cite>
-            <span class="reviews__author-info">25 лет, водитель трамвая</span>
+            <span class="reviews__author-info mobile-hidden">25 лет, водитель трамвая</span>
           </blockquote>
           <blockquote class="reviews__item slider__item">
             <p class="reviews__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на
               привычные серые вещи! А еще я познакомился со своей будущей женой в
               комментариях к выложенной фотографии!»</p>
             <cite class="reviews__author">Владислав Иванов</cite>
-            <span class="reviews__author-info">27 лет, водитель трамвая</span>
+            <span class="reviews__author-info mobile-hidden">27 лет, водитель трамвая</span>
           </blockquote>
           <blockquote class="reviews__item slider__item">
             <p class="reviews__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на
               привычные серые вещи! А еще я познакомился со своей будущей женой в
               комментариях к выложенной фотографии!»</p>
             <cite class="reviews__author">Сергей Безруков</cite>
-            <span class="reviews__author-info">32 года, водитель трамвая</span>
+            <span class="reviews__author-info mobile-hidden">32 года, водитель трамвая</span>
           </blockquote>
           <button class="reviews__prev" type="button">Предыдущий отзыв</button>
           <button class="reviews__next" type="button">Следующий отзыв</button>
@@ -213,11 +215,12 @@
             </dd>
           </dl>
         </div>
-        <div class="main-footer__map"></div>
+        <div class="main-footer__map">
+            <iframe src="https://yandex.ru/map-widget/v1/-/CCUEYCGZpC" width="100%" height="400" frameborder="0" allowfullscreen="true" style="position: relative;"></iframe>
         <div class="main-footer__social">
           <div class="main-footer__wrapper">
             <div class="main-footer__logo"></div>
-            <ul class="main-footer__list">
+            <ul class="main-footer__list list-reset">
               <li class="main-footer__item">
                 <a class="main-footer__link main-footer__link-tw" href="#">Twitter</a>
               </li>
