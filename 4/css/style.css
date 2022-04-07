@@ -1,0 +1,404 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+img {
+  height: auto;
+  max-width: 100%;
+  object-fit: contain;
+}
+
+a {
+  text-decoration: none;
+}
+
+.page {
+  height: 100%;
+  font-family: var(--font-family, sans-serif);
+}
+
+.page__body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100%;
+  font-size: 18px;
+  line-height: 30px;
+}
+
+.list-reset {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.button {
+  border: none;
+  padding: 0;
+  background: transparent;
+  cursor: pointer;
+}
+
+.visually-hidden {
+  position: absolute;
+  overflow: hidden;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  width: 1px;
+  height: 1px;
+  clip: rect(0 0 0 0);
+}
+
+:root {
+  --font-family: "Open Sans", sans-serif;
+  --light-color: #ffffff;
+  --lightgrey-color: #f2f2f2;
+  --darken-color: #283645;
+  --dark-color: #000000;
+  --red-color: #d22856;
+  --green-color: #2aab6d;
+  --mediumgreen-color: #03c482;
+  --lightgreen-color: #00ffa8;
+}
+
+@font-face {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 300;
+  src: url("../fonts/opensanslight.woff2") format("woff2");
+  font-display: swap;
+}
+@font-face {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/opensans.woff2") format("woff2");
+  font-display: swap;
+}
+@font-face {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/opensansbold.woff2") format("woff2");
+  font-display: swap;
+}
+.main-header {
+  background-image: url("../img/bg-desktop.jpg");
+  background-repeat: no-repeat;
+}
+
+.main-header__title {
+  margin: 0;
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 33px;
+  text-align: center;
+  color: var(--light-color);
+}
+
+.main-nav__link {
+  color: var(--light-color);
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 32px;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.intro {
+  background-color: var(--darken-color);
+}
+
+.download-info__title {
+  margin: 0;
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 120%;
+  text-align: center;
+  color: var(--light-color);
+}
+
+.intro__download-button {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 18px;
+  color: var(--light-color);
+  text-decoration: none;
+}
+
+.intro__link {
+  display: inline-block;
+  width: 47px;
+  height: 56px;
+  font-size: 0;
+}
+.intro__link--apple {
+  background-image: url("../img/apple-logo.svg");
+  background-repeat: no-repeat;
+}
+.intro__link--android {
+  background-image: url("../img/android-logo.svg");
+  background-repeat: no-repeat;
+}
+.intro__link--microsoft {
+  background-image: url("../img/microsoft-logo.svg");
+  background-repeat: no-repeat;
+}
+
+.intro__description {
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 24px;
+  text-align: center;
+  color: var(--light-color);
+  padding-bottom: 38px;
+}
+
+.slogan {
+  max-width: 280px;
+}
+
+.slogan__text {
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 120%;
+  text-align: center;
+  color: var(--darken--color);
+}
+.slogan__text:not(:last-child) {
+  margin-bottom: 35px;
+}
+
+.features {
+  background-color: var(--lightgrey-color);
+  background-image: url("../img/iphone-screen-3.png");
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.features__title {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 24px;
+  color: var(--dark-color);
+  text-align: center;
+}
+
+.features__description {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  text-align: center;
+  color: var(--darken-color);
+}
+
+.effect {
+  background-image: url("../img/timer.png");
+  background-position: left center;
+  background-repeat: no-repeat;
+}
+
+.effect__title {
+  margin: 0;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 30px;
+  color: var(--dark-color);
+}
+
+.effect__description {
+  margin: 0;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 30px;
+  color: var(--darken-color);
+}
+
+.effect__more {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 30px;
+  text-decoration: underline;
+  color: var(--red-color);
+}
+
+.reviews__text {
+  margin: 0;
+  font-weight: 400;
+  font-size: 14px;
+  text-align: center;
+  color: var(--darken-color);
+}
+
+.reviews__author {
+  margin: 0;
+  font-weight: 700;
+  font-style: normal;
+  color: var(--dark-color);
+}
+
+.reviews__author-info {
+  font-weight: 400;
+  font-size: 18px;
+  color: var(--darken-color);
+}
+
+.tariffs {
+  background-color: var(--lightgrey-color);
+}
+
+.table-pricing__item--tariffs {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 30px;
+  text-transform: uppercase;
+  color: var(--light-color);
+  background-color: var(--darken-color);
+  border-color: 2px solid var(--darken-color);
+}
+.table-pricing__item--price {
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 30px;
+  text-transform: uppercase;
+  color: var(--light-color);
+  background-color: var(--darken-color);
+  border-color: 2px solid var(--darken-color);
+}
+
+.table-pricing__cell--function {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 30px;
+  text-transform: uppercase;
+  color: var(--darken-color);
+}
+
+.contacts__title {
+  margin: 0;
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 120%;
+  color: var(--darken-color);
+}
+
+.contacts__item {
+  margin: 0;
+}
+
+.contacts__heading {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 25px;
+  color: var(--darken-color);
+}
+
+.contacts__phone,
+.contacts__description,
+.contacts__mail {
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 33px;
+  color: var(--red-color);
+}
+
+.collection__description {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 30px;
+  text-align: center;
+  color: var(--darken-color);
+}
+
+.collection__name {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 24px;
+  color: var(--darken-color);
+}
+
+.collection__sending {
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 24px;
+  text-transform: uppercase;
+  color: var(--darken-color);
+}
+
+.collection__message {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  color: var(--darken-color);
+}
+
+.collection__likes,
+.collection__likes-number {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 24px;
+  text-transform: uppercase;
+  color: var(--red-color);
+}
+
+.filter__description {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 30px;
+  text-align: center;
+  color: var(--darken-color);
+}
+
+.container-form__description {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 30px;
+  text-align: center;
+  color: var(--darken-color);
+}
+
+.mobile-hidden {
+  display: none;
+}
+
+.form-feedback__label {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 30px;
+  color: var(--red-color);
+}
+
+.form-feedback__legend-text {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  text-align: center;
+  text-transform: uppercase;
+  color: var(--red-color);
+}
+
+.form-feedback__label-checkbox {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 30px;
+  color: var(--darken-color);
+}
+
+.form-feedback__notification {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 30px;
+  text-transform: uppercase;
+  color: var(--darken-color);
+}
+
+.form-feedback__star {
+  color: var(--red-color);
+}
+/*# sourceMappingURL=style.css.map */
