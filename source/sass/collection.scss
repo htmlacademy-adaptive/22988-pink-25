@@ -1,0 +1,38 @@
+.collection__description {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 30px;
+  text-align: center;
+  color: var(--darken-color);
+}
+
+.collection__name {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 24px;
+  color: var(--darken-color);
+}
+
+.collection__sending {
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 24px;
+  text-transform: uppercase;
+  color: var(--darken-color);
+}
+
+.collection__message {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  color: var(--darken-color);
+}
+
+.collection__likes,
+.collection__likes-number {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 24px;
+  text-transform: uppercase;
+  color: var(--red-color);
+}

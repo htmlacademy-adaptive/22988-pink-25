@@ -1,0 +1,35 @@
+.tariffs {
+  background-color: var(--lightgrey-color);
+}
+
+.table-pricing__item {
+  &--tariffs {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 30px;
+    text-transform: uppercase;
+    color: var(--light-color);
+    background-color: var(--darken-color);
+    border-color: 2px solid var(--darken-color);
+  }
+
+  &--price {
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 30px;
+    text-transform: uppercase;
+    color: var(--light-color);
+    background-color: var(--darken-color);
+    border-color: 2px solid var(--darken-color);
+  }
+}
+
+.table-pricing__cell {
+  &--function {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 30px;
+    text-transform: uppercase;
+    color: var(--darken-color);
+  }
+}
