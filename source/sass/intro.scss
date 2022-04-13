@@ -2,6 +2,23 @@
   background-color: var(--darken-color);
 }
 
+.intro__wrapper {
+  max-width: 320px;
+  margin: 0 auto;
+  padding: 0 20px;
+
+  @media (min-width: 768px) {
+    max-width: 660px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  @media (min-width: 1080px) {
+    max-width: 940px;
+  }
+}
+
 .download-info__title {
   margin: 0;
   font-weight: 300;

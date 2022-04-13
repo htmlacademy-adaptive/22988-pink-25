@@ -1,22 +1,59 @@
 .features {
+  min-height: 720px;
   background-color: var(--lightgrey-color);
   background-image: url("../img/iphone-screen-3.png");
-  background-position: center;
+  background-position: bottom center;
   background-repeat: no-repeat;
+  margin-bottom: 50px;
+
+  @media (min-width: 768px) {
+    background-position: top left;
+    min-height: 450px;
+  }
 }
 
 .features__title {
+  margin: 0;
   font-weight: 700;
   font-size: 18px;
   line-height: 24px;
   color: var(--dark-color);
   text-align: center;
+
+  @media (min-width: 768px) {
+    text-align: left;
+  }
 }
 
 .features__description {
+  margin: 0;
   font-weight: 400;
   font-size: 14px;
   line-height: 24px;
   text-align: center;
   color: var(--darken-color);
+
+  @media (min-width: 768px) {
+    text-align: left;
+  }
+}
+
+.features__list {
+  margin-bottom: 50px;
+
+  @media (min-width: 768px) {
+    max-width: 310px;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    margin-left: auto;
+  }
+
+  @media (min-width: 1080px) {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    max-width: 100%;
+    padding-top: 450px;
+    margin-left: auto;
+  }
 }

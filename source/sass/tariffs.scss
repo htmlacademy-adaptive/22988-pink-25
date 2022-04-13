@@ -2,6 +2,30 @@
   background-color: var(--lightgrey-color);
 }
 
+.tariffs__wrapper {
+  max-width: 320px;
+  margin: 0 auto;
+  padding: 0 20px;
+
+  @media (min-width: 768px) {
+    max-width: 660px;
+  }
+
+  @media (min-width: 1080px) {
+    max-width: 940px;
+  }
+}
+
+.table-pricing {
+  display: flex;
+  flex-direction: column;
+
+  tr {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
 .table-pricing__item {
   &--tariffs {
     font-weight: 700;
@@ -30,6 +54,7 @@
     font-size: 14px;
     line-height: 30px;
     text-transform: uppercase;
+    text-align: left;
     color: var(--darken-color);
   }
 }
