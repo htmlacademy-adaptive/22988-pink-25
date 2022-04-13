@@ -1,7 +1,30 @@
 .effect {
+  display: none;
   background-image: url("../img/timer.png");
   background-position: left center;
   background-repeat: no-repeat;
+  background-size: 238px 276px;
+
+  @media (min-width: 768px) {
+    display: block;
+    min-height: 350px;
+    background-position: top left;
+  }
+
+  @media (min-width: 1080px) {
+    background-size: 298px 345px;
+  }
+}
+
+.effect__content {
+  @media (min-width: 768px) {
+    max-width: 310px;
+    margin-left: auto;
+  }
+
+  @media (min-width: 1080px) {
+    max-width: 534px;
+  }
 }
 
 .effect__title {

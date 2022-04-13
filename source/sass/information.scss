@@ -1,0 +1,13 @@
+.information__wrapper {
+  max-width: 320px;
+  margin: 0 auto;
+  padding: 0 20px;
+
+  @media (min-width: 768px) {
+    max-width: 660px;
+  }
+
+  @media (min-width: 1080px) {
+    max-width: 940px;
+  }
+}
