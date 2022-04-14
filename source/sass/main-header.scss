@@ -3,6 +3,50 @@
   background-repeat: no-repeat;
 }
 
+.main-header__wrapper {
+  max-width: 320px;
+  margin: 0 auto;
+  padding: 0 20px;
+
+  @media (min-width: 768px) {
+    max-width: 660px;
+  }
+
+  @media (min-width: 1080px) {
+    max-width: 940px;
+  }
+}
+
+.logo-pink-mobile {
+  @media (min-width: 768px) {
+    display: none;
+  }
+
+  @media (min-width: 1080px) {
+    display: none;
+  }
+}
+
+.logo-pink-tablet {
+  display: none;
+
+  @media (min-width: 768px) {
+    display: inline-block;
+  }
+
+  @media (min-width: 1080px) {
+    display: none;
+  }
+}
+
+.logo-pink-desctop {
+  display: none;
+
+  @media (min-width: 1080px) {
+    display: inline-block;
+  }
+}
+
 .main-header__title {
   margin: 0;
   font-weight: 300;

@@ -1,3 +1,22 @@
+.main-nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 110px;
+}
+
+.main-nav__list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  @media (min-width: 1080px) {
+    flex-direction: row;
+    justify-content: flex-end;
+  }
+}
+
 .main-nav__link {
   color: var(--light-color);
   font-weight: 700;
