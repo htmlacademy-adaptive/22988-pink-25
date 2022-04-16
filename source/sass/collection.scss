@@ -6,7 +6,31 @@
   color: var(--darken-color);
 }
 
+.collection__wrapper {
+  width: 87.5%;
+  margin: 0 auto;
+
+  @media (min-width: $tablet-width) {
+    max-width: 660px;
+  }
+
+  @media (min-width: $desctop-width) {
+    max-width: 940px;
+  }
+}
+
+.collection__user-photo {
+  width: 100%;
+  height: auto;
+}
+
+.collection__user-comment,
+.collection__box {
+  background-color: var(--lightgrey-color);
+}
+
 .collection__name {
+  margin: 0;
   font-weight: 700;
   font-size: 14px;
   line-height: 24px;
@@ -35,4 +59,22 @@
   line-height: 24px;
   text-transform: uppercase;
   color: var(--red-color);
+}
+
+.collection__list {
+  display: grid;
+  gap: 20px;
+
+  @media (min-width: $tablet-width) {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  @media (min-width: $desctop-width) {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.collection__user-picture {
+  width: 100%;
+  height: auto;
 }
