@@ -19,7 +19,11 @@
   align-items: center;
 
   .mobile-hidden {
-    display: block;
+    display: none;
+
+    @media (min-width: 768px) {
+      display: block;
+    }
   }
 }
 

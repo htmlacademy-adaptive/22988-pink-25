@@ -1,14 +1,37 @@
 .features {
-  min-height: 720px;
-  background-color: var(--lightgrey-color);
-  background-image: url("../img/iphone-screen-3.png");
-  background-position: bottom center;
+  padding-top: 87px;
+  background-image: url("../img/triangl-bg.svg");
+  background-size: 100% 100%;
+  background-position: 50%;
   background-repeat: no-repeat;
   margin-bottom: 50px;
+}
+
+.features__wrapper {
+  max-width: 320px;
+  margin: 0 auto;
+  padding: 0 20px;
 
   @media (min-width: 768px) {
-    background-position: top left;
-    min-height: 450px;
+    max-width: 660px;
+  }
+
+  @media (min-width: 1080px) {
+    max-width: 940px;
+  }
+}
+
+.features__item {
+  &--img {
+    padding-bottom: 386px;
+    background-image: url("../img/iphone-screen-3.png");
+    background-repeat: no-repeat;
+    background-position: 50% 146px;
+
+    @media (min-width: 768px) {
+      background-position: left top;
+      background-size: 268px 547px;
+    }
   }
 }
 
