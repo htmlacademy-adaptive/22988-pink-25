@@ -1,7 +1,39 @@
+.filter__wrapper {
+  width: 87.5%;
+  margin: 0 auto;
+
+  @media (min-width: $tablet-width) {
+    max-width: 660px;
+  }
+
+  @media (min-width: $desctop-width) {
+    max-width: 940px;
+  }
+}
+
 .filter__description {
   font-weight: 400;
   font-size: 14px;
   line-height: 30px;
   text-align: center;
   color: var(--darken-color);
+}
+
+.filter__form {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  background-color: var(--lightgrey-color);
+}
+
+.filter__control {
+  display: grid;
+
+  @media (min-width: $tablet-width) {
+    grid-template-columns: auto 1fr;
+    gap: 43px;
+  }
+
+  @media (min-width: $desctop-width) {
+    margin-left: 80px;
+  }
 }

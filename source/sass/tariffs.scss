@@ -1,5 +1,9 @@
 .tariffs {
+  padding-top: 87px;
   background-color: var(--lightgrey-color);
+  background-image: url("../img/triangl-bg.svg");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
 }
 
 .tariffs__wrapper {
@@ -7,11 +11,11 @@
   margin: 0 auto;
   padding: 0 20px;
 
-  @media (min-width: 768px) {
+  @media (min-width: $tablet-width) {
     max-width: 660px;
   }
 
-  @media (min-width: 1080px) {
+  @media (min-width: $desctop-width) {
     max-width: 940px;
   }
 }

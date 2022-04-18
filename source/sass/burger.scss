@@ -1,5 +1,5 @@
 .burger {
-  @media (min-width: 1080px) {
+  @media (min-width: $desctop-width) {
     display: none;
   }
 }

@@ -1,14 +1,37 @@
 .features {
-  min-height: 720px;
-  background-color: var(--lightgrey-color);
-  background-image: url("../img/iphone-screen-3.png");
-  background-position: bottom center;
+  padding-top: 87px;
+  background-image: url("../img/triangl-bg.svg");
+  background-size: 100% 100%;
+  background-position: 50%;
   background-repeat: no-repeat;
   margin-bottom: 50px;
+}
 
-  @media (min-width: 768px) {
-    background-position: top left;
-    min-height: 450px;
+.features__wrapper {
+  max-width: 320px;
+  margin: 0 auto;
+  padding: 0 20px;
+
+  @media (min-width: $tablet-width) {
+    max-width: 660px;
+  }
+
+  @media (min-width: $desctop-width) {
+    max-width: 940px;
+  }
+}
+
+.features__item {
+  &--img {
+    padding-bottom: 386px;
+    background-image: url("../img/iphone-screen-3.png");
+    background-repeat: no-repeat;
+    background-position: 50% 146px;
+
+    @media (min-width: $tablet-width) {
+      background-position: left top;
+      background-size: 268px 547px;
+    }
   }
 }
 
@@ -20,7 +43,7 @@
   color: var(--dark-color);
   text-align: center;
 
-  @media (min-width: 768px) {
+  @media (min-width: $tablet-width) {
     text-align: left;
   }
 }
@@ -33,7 +56,7 @@
   text-align: center;
   color: var(--darken-color);
 
-  @media (min-width: 768px) {
+  @media (min-width: $tablet-width) {
     text-align: left;
   }
 }
@@ -41,7 +64,7 @@
 .features__list {
   margin-bottom: 50px;
 
-  @media (min-width: 768px) {
+  @media (min-width: $tablet-width) {
     max-width: 310px;
     display: flex;
     flex-direction: column;
@@ -49,7 +72,7 @@
     margin-left: auto;
   }
 
-  @media (min-width: 1080px) {
+  @media (min-width: $desctop-width) {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     max-width: 100%;
