@@ -1,8 +1,16 @@
 .intro {
   background-color: var(--darken-color);
+  padding-top: 28px;
+
+  @media (min-width: $tablet-width) {
+    background-color: transparent;
+  }
 }
 
 .intro__wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   max-width: 320px;
   margin: 0 auto;
   padding: 0 20px;
@@ -34,6 +42,27 @@
   line-height: 18px;
   color: var(--light-color);
   text-decoration: none;
+  margin-bottom: 30px;
+  border: 3px solid var(--light-color);
+  border-radius: 100px;
+  padding: 15px 0;
+  text-align: center;
+  width: 280px;
+
+  @media (min-width: $tablet-width) {
+    width: 300px;
+  }
+}
+
+.intro__list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 35px;
+
+  @media (min-width: $tablet-width) {
+    margin-left: 46px;
+    margin-bottom: 38px;
+  }
 }
 
 .intro__link {
@@ -45,24 +74,33 @@
   &--apple {
     background-image: url("../img/apple-logo.svg");
     background-repeat: no-repeat;
+    background-position: 100%;
   }
 
   &--android {
     background-image: url("../img/android-logo.svg");
     background-repeat: no-repeat;
+    background-position: 100%;
   }
 
   &--microsoft {
     background-image: url("../img/microsoft-logo.svg");
     background-repeat: no-repeat;
+    background-position: 100%;
   }
 }
 
 .intro__description {
+  margin: 0;
+  padding: 0;
   font-weight: 300;
-  font-size: 14px;
+  font-size: 18px;
   line-height: 24px;
   text-align: center;
   color: var(--light-color);
   padding-bottom: 38px;
+
+  @media (min-width: $tablet-width) {
+    width: 300px;
+  }
 }

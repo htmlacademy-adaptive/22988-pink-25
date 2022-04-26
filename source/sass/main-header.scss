@@ -7,7 +7,7 @@
 
   @media (min-width: $tablet-width) {
     background-image: url("../img/bg-desktop.jpg");
-    background-size: 100%;
+    background-size: cover;
     background-position: 50% 0;
     background-repeat: no-repeat;
   }
@@ -18,7 +18,7 @@
   margin: 0 auto;
 
   @media (min-width: $desctop-width) {
-    max-width: 940px;
+    width: auto;
   }
 }
 
@@ -52,6 +52,22 @@
   }
 }
 
+.main-header__info {
+  display: flex;
+  max-width: 320px;
+  width: 280px;
+  margin: 0 auto;
+  margin-bottom: 235px;
+
+  @media (min-width: $tablet-width) {
+    max-width: 660px;
+    margin: 0;
+    padding: 0 20px;
+    margin-left: 80px;
+    margin-bottom: 0;
+  }
+}
+
 .main-header__intro {
   width: 75%;
   display: flex;
@@ -64,13 +80,12 @@
   margin: 0;
   font-weight: 300;
   font-size: 24px;
-  line-height: 33px;
+  line-height: 120%;
   text-align: center;
   color: var(--light-color);
 
   @media (min-width: $tablet-width) {
-    font-size: 50px;
-    line-height: 68px;
+    font-size: 40px;
   }
 }
 
