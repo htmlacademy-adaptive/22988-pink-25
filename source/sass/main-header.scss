@@ -14,18 +14,8 @@
 }
 
 .main-header__wrapper {
-  max-width: 320px;
   width: 100%;
   margin: 0 auto;
-  padding: 0 20px;
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  align-items: center;
-
-  @media (min-width: $tablet-width) {
-    max-width: 660px;
-  }
 
   @media (min-width: $desctop-width) {
     max-width: 940px;

@@ -11,8 +11,10 @@
 <body class="page-body">
   <header class="main-header">
     <h1 class="visually-hidden">Пинк</h1>
-    <nav class="main-nav main-nav--nojs">
-      <div class="main-header__wrapper">
+    <!-- main-nav--closed меню закрыто, отображение бургера -->
+    <!-- main-nav--opened меню открыто, отображение крестика закрытия меню -->
+    <nav class="main-nav main-nav--opened main-nav--nojs">
+      <div class="main-nav__logo-wrapper">
         <a class="main-header__logo" href="#">
           <svg class="logo-pink-mobile" width="74" height="23" viewBox="0 0 74 23" fill="none"
             xmlns="http://www.w3.org/2000/svg">
@@ -81,6 +83,13 @@
               fill="#D22856" />
           </svg>
         </a>
+        <button class="main-nav__burger" aria-label="Открыть меню">
+          <span class="main-nav__burger-line"></span>
+          <span class="main-nav__burger-line"></span>
+          <span class="main-nav__burger-line"></span>
+        </button>
+      </div>
+      <div class="main-header__wrapper">
         <ul class="main-nav__list list-reset">
           <li class="main-nav__item">
             <a class="main-nav__link main-nav__link--current" href="index.html">Главная</a>
@@ -95,12 +104,6 @@
             <a class="main-nav__link" href="https://htmlacademy.ru/intensive/adaptive">Html academy</a>
           </li>
         </ul>
-
-        <button class="burger" aria-label="Открыть меню">
-          <span class="burger__line"></span>
-          <span class="burger__line"></span>
-          <span class="burger__line"></span>
-        </button>
       </div>
     </nav>
     <!-- <section class="intro">
