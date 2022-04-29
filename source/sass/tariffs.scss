@@ -1,9 +1,27 @@
 .tariffs {
-  padding-top: 87px;
+  position: relative;
+  padding-top: 90px;
   background-color: var(--lightgrey-color);
-  background-image: url("../img/triangl-bg.svg");
-  background-size: 100% 100%;
-  background-repeat: no-repeat;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 30px;
+    // -webkit-clip-path: polygon(0 100%, 0 0, 100% 0);
+    clip-path: polygon(0 100%, 0 0, 100% 0);
+    background-color: var(--light-color);
+
+    @media (min-width: $tablet-width) {
+      height: 55px;
+    }
+
+    @media (min-width: $desctop-width) {
+      height: 100px;
+    }
+  }
 }
 
 .tariffs__wrapper {

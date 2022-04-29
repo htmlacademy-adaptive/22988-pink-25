@@ -1,25 +1,56 @@
 .effect {
   display: none;
-  background-image: url("../img/timer.png");
-  background-position: left center;
-  background-repeat: no-repeat;
-  background-size: 238px 276px;
 
   @media (min-width: $tablet-width) {
     display: block;
-    min-height: 350px;
-    background-position: top left;
+    padding-top: 100px;
+    margin-bottom: 30px;
   }
 
   @media (min-width: $desctop-width) {
-    background-size: 298px 345px;
+    background-color: var(--lightgrey-color);
+    padding-bottom: 120px;
+  }
+}
+
+.effect__wrapper {
+  @media (min-width: $tablet-width) {
+    position: relative;
+    max-width: 660px;
+    padding: 0 20px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    &::before {
+      content: "";
+      position: absolute;
+      width: 238px;
+      height: 276px;
+      left: 20px;
+      top: -40px;
+      background-image: url("../img/timer.png");
+      background-size: 100%;
+      background-repeat: no-repeat;
+    }
+  }
+
+  @media (min-width: $desctop-width) {
+    max-width: 940px;
+    grid-template-columns: 345px 1fr;
+
+    &::before {
+      width: 298px;
+      height: 345px;
+      background-image: url("../img/timer-desc.png");
+    }
   }
 }
 
 .effect__content {
   @media (min-width: $tablet-width) {
-    max-width: 310px;
-    margin-left: auto;
+    width: 310px;
+    grid-column: 2;
   }
 
   @media (min-width: $desctop-width) {
@@ -30,9 +61,21 @@
 .effect__title {
   margin: 0;
   font-weight: 700;
-  font-size: 30px;
-  line-height: 30px;
   color: var(--dark-color);
+
+  @media (min-width: $tablet-width) {
+    width: 168px;
+    font-size: 30px;
+    line-height: 36px;
+    margin-bottom: 24px;
+  }
+
+  @media (min-width: $desctop-width) {
+    width: 298px;
+    font-size: 30px;
+    line-height: 30px;
+    margin-bottom: 37px;
+  }
 }
 
 .effect__description {
@@ -41,6 +84,21 @@
   font-size: 18px;
   line-height: 30px;
   color: var(--darken-color);
+
+  @media (min-width: $tablet-width) {
+    width: 300px;
+    font-size: 14px;
+    line-height: 24px;
+    text-align: left;
+    margin-bottom: 24px;
+  }
+
+  @media (min-width: $desctop-width) {
+    width: 534px;
+    font-size: 18px;
+    line-height: 30px;
+    margin-bottom: 47px;
+  }
 }
 
 .effect__more {
@@ -49,4 +107,14 @@
   line-height: 30px;
   text-decoration: underline;
   color: var(--red-color);
+
+  @media (min-width: $tablet-width) {
+    font-size: 14px;
+    line-height: 24px;
+  }
+
+  @media (min-width: $desctop-width) {
+    font-size: 18px;
+    line-height: 30px;
+  }
 }
