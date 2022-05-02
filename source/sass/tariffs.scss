@@ -1,7 +1,12 @@
 .tariffs {
   position: relative;
-  padding-top: 90px;
+  padding-bottom: 98px;
   background-color: var(--lightgrey-color);
+
+  @media (min-width: $desctop-width) {
+    padding-top: 145px;
+    margin-bottom: 55px;
+  }
 
   &::before {
     content: "";
@@ -27,14 +32,17 @@
 .tariffs__wrapper {
   max-width: 320px;
   margin: 0 auto;
-  padding: 0 20px;
 
   @media (min-width: $tablet-width) {
     max-width: 660px;
+    margin: 0 auto;
+    padding: 0 20px;
   }
 
   @media (min-width: $desctop-width) {
     max-width: 940px;
+    margin: 0 auto;
+    padding: 0 20px;
   }
 }
 
@@ -46,9 +54,25 @@
     display: grid;
     grid-template-columns: repeat(4, 1fr);
   }
+
+  @media (min-width: $tablet-width) {
+    width: auto;
+    padding-top: 180px;
+  }
+
+  @media (min-width: $desctop-width) {
+    width: auto;
+    padding-top: 0;
+  }
 }
 
 .table-pricing__item {
+  padding: 16px 0 18px 0;
+
+  @media (min-width: $tablet-width) {
+    padding: 9px 0 6px 0;
+  }
+
   &--tariffs {
     font-weight: 700;
     font-size: 18px;
@@ -57,26 +81,148 @@
     color: var(--light-color);
     background-color: var(--darken-color);
     border-color: 2px solid var(--darken-color);
+
+    &:nth-child(3) {
+      border-left: 2px solid #e5e5e5;
+      border-right: 2px solid #e5e5e5;
+    }
+
+    @media (min-width: $tablet-width) {
+      font-size: 16px;
+    }
   }
 
-  &--price {
-    font-weight: 300;
-    font-size: 24px;
-    line-height: 30px;
-    text-transform: uppercase;
-    color: var(--light-color);
-    background-color: var(--darken-color);
-    border-color: 2px solid var(--darken-color);
+  &--empty {
+    border-bottom: 2px solid #e5e5e5;
+  }
+
+  &--hits {
+    position: relative;
+
+    &::before {
+      content: "";
+      position: absolute;
+      width: 74px;
+      height: 74px;
+      left: 0;
+      top: 0;
+      background-image: url("../img/hits-logo.svg");
+      background-repeat: no-repeat;
+    }
+
+    @media (min-width: $tablet-width) {
+      &::before {
+        width: 61px;
+        height: 61px;
+        background-image: url("../img/hits-logo-tablet.svg");
+        background-size: 90%;
+      }
+    }
+  }
+}
+
+.table-pricing__price {
+  margin: 0;
+  padding: 0;
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 30px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 18px;
+  }
+}
+
+.table-pricing__main {
+  border-left: 2px solid #e5e5e5;
+  border-right: 2px solid #e5e5e5;
+
+  tr {
+    .table-pricing__cell {
+      border-bottom: 2px solid #e5e5e5;
+    }
+  }
+
+  @media (min-width: $tablet-width) {
+    th {
+      padding: 6px 0;
+    }
   }
 }
 
 .table-pricing__cell {
+  &:nth-child(3) {
+    border-left: 2px solid #e5e5e5;
+    border-right: 2px solid #e5e5e5;
+  }
+
   &--function {
     font-weight: 400;
     font-size: 14px;
     line-height: 30px;
-    text-transform: uppercase;
+    text-transform: none;
     text-align: left;
     color: var(--darken-color);
+    border-right: 2px solid #e5e5e5;
+
+    @media (min-width: $desctop-width) {
+      padding: 23px 0;
+      padding-left: 22px;
+    }
   }
+
+  &--on,
+  &--off {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+.tariffs__control {
+  display: flex;
+  justify-content: center;
+  gap: 19px;
+}
+
+.tariffs__label {
+  position: relative;
+  font-size: 0;
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 6px;
+    height: 6px;
+    top: 3px;
+    left: 3px;
+    border-radius: 50%;
+    background-color: rgb(40, 54, 69, 0.3);
+  }
+
+  @media (min-width: $tablet-width) {
+    &::before,
+    &::after {
+      display: none;
+    }
+  }
+
+  @media (min-width: $desctop-width) {
+    &::before,
+    &::after {
+      display: none;
+    }
+  }
+}
+
+.tariffs__input[id="tariff-toggle1"]:checked ~ .tariffs__label[for="tariff-toggle1"]::after,
+.tariffs__input[id="tariff-toggle2"]:checked ~ .tariffs__label[for="tariff-toggle2"]::after,
+.tariffs__input[id="tariff-toggle3"]:checked ~ .tariffs__label[for="tariff-toggle3"]::after {
+  content: "";
+  position: absolute;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: var(--light-color);
+  border: 3px solid var(--darken-color);
 }

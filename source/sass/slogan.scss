@@ -7,10 +7,12 @@
 
   @media (min-width: $tablet-width) {
     width: 588px;
+    margin-bottom: 47px;
   }
 
   @media (min-width: $desctop-width) {
     width: 780px;
+    margin-bottom: 72px;
   }
 }
 
