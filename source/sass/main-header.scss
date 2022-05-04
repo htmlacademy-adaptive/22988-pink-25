@@ -4,7 +4,6 @@
   background-size: 100%;
   background-position: 50% 0;
   background-repeat: no-repeat;
-  min-height: 462px;
 
   @media (min-width: $tablet-width) {
     background-image: url("../img/bg-desktop.jpg");
@@ -16,6 +15,19 @@
 
   @media (min-width: $desctop-width) {
     min-height: 853px;
+  }
+}
+
+.main-header__catalog {
+  padding-bottom: 84px;
+
+  @media (min-width: $tablet-width) {
+    min-height: auto;
+    padding-bottom: 143px;
+  }
+
+  @media (min-width: $desctop-width) {
+    padding-bottom: 104px;
   }
 }
 
@@ -80,6 +92,16 @@
   justify-content: center;
   align-items: center;
   margin: 0 auto;
+  padding-top: 105px;
+
+  @media (min-width: $tablet-width) {
+    width: 358px;
+    padding-top: 191px;
+  }
+
+  @media (min-width: $desctop-width) {
+    padding-top: 184px;
+  }
 }
 
 .main-header__title {

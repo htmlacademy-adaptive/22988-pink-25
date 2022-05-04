@@ -1,10 +1,57 @@
+.collection {
+  padding-top: 54px;
+  margin-bottom: 49px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 100px;
+  }
+}
+
+.collection-inner {
+  max-width: 320px;
+  padding: 0 20px;
+  margin: 0 auto;
+
+  @media (min-width: $tablet-width) {
+    max-width: 660px;
+  }
+
+  @media (min-width: $desctop-width) {
+    max-width: 940px;
+  }
+}
+
+.collection__title-content {
+  margin-bottom: 60px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 85px;
+  }
+
+  @media (min-width: $desctop-width) {
+    margin-bottom: 85px;
+  }
+}
+
 .collection__description {
+  margin: 0 auto;
+  padding: 0;
   font-weight: 400;
   font-size: 14px;
   line-height: 30px;
   text-align: center;
   color: var(--darken-color);
+
+  @media (min-width: $tablet-width) {
+    width: 570px;
+    font-size: 18px;
+  }
+
+  @media (min-width: $desctop-width) {
+    width: 572px;
+  }
 }
+
 
 .collection__wrapper {
   width: 87.5%;
@@ -17,64 +64,4 @@
   @media (min-width: $desctop-width) {
     max-width: 940px;
   }
-}
-
-.collection__user-photo {
-  width: 100%;
-  height: auto;
-}
-
-.collection__user-comment,
-.collection__box {
-  background-color: var(--lightgrey-color);
-}
-
-.collection__name {
-  margin: 0;
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 24px;
-  color: var(--darken-color);
-}
-
-.collection__sending {
-  font-weight: 300;
-  font-size: 12px;
-  line-height: 24px;
-  text-transform: uppercase;
-  color: var(--darken-color);
-}
-
-.collection__message {
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 24px;
-  color: var(--darken-color);
-}
-
-.collection__likes,
-.collection__likes-number {
-  font-weight: 400;
-  font-size: 12px;
-  line-height: 24px;
-  text-transform: uppercase;
-  color: var(--red-color);
-}
-
-.collection__list {
-  display: grid;
-  gap: 20px;
-
-  @media (min-width: $tablet-width) {
-    grid-template-columns: 1fr 1fr;
-  }
-
-  @media (min-width: $desctop-width) {
-    grid-template-columns: repeat(3, 1fr);
-  }
-}
-
-.collection__user-picture {
-  width: 100%;
-  height: auto;
 }

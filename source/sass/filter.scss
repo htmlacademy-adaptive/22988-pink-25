@@ -17,6 +17,16 @@
   line-height: 30px;
   text-align: center;
   color: var(--darken-color);
+  margin-bottom: 52px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 78px;
+    font-size: 18px;
+  }
+
+  @media (min-width: $desctop-width) {
+    margin-bottom: 75px;
+  }
 }
 
 .filter__form {
@@ -36,4 +46,12 @@
   @media (min-width: $desctop-width) {
     margin-left: 80px;
   }
+}
+
+.filter__list {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
