@@ -108,6 +108,17 @@
   height: 54px;
   border: 3px solid rgb(40, 54, 69, 0.1);
   border-radius: 50%;
+  cursor: pointer;
+  transition: all 0.1s ease-in-out;
+
+  &:hover {
+    border-color: var(--darken-color);
+    transition: all 0.1s ease-in-out;
+  }
+
+  &:active {
+    opacity: 10%;
+  }
 }
 
 .main-footer__link {
@@ -172,5 +183,18 @@
   font-size: 0;
   width: 27px;
   height: 34px;
+  transition: all 0.1s ease-in-out;
+
+  &:hover {
+    svg {
+      path {
+        fill: var(--darken-color);
+      }
+    }
+  }
+
+  &:active {
+    opacity: 30%;
+  }
 }
 

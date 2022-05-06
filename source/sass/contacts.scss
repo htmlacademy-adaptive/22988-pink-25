@@ -2,6 +2,7 @@
   max-width: 320px;
   margin: 0 auto;
   padding: 0 20px;
+  padding-top: 50px;
 
   @media (min-width: $tablet-width) {
     max-width: 660px;
@@ -113,4 +114,14 @@
   font-size: 24px;
   line-height: 33px;
   color: var(--red-color);
+}
+
+.contacts__mail {
+  &:hover {
+    color: var(--darken-color);
+  }
+
+  &:active {
+    color: rgb(40, 54, 69, 0.3);
+  }
 }

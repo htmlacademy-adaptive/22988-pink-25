@@ -194,5 +194,9 @@
     line-height: 18px;
     text-transform: none;
   }
+
+  &--current {
+    border-bottom: 2px solid var(--light-color);
+  }
 }
 

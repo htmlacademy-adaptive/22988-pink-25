@@ -79,6 +79,18 @@
   padding: 15px 0;
   text-align: center;
   width: 280px;
+  transition: all 0.1s ease-in-out;
+
+  &:hover {
+    background-color: var(--light-color);
+    color: var(--red-color);
+    transition: all 0.1s ease-in-out;
+  }
+
+  &:active {
+    color: rgb(210, 40, 86, 0.3);
+    transition: all 0.1s ease-in-out;
+  }
 
   @media (min-width: $tablet-width) {
     width: 300px;
