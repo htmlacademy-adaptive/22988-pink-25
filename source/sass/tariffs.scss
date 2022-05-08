@@ -1,12 +1,17 @@
 .tariffs {
   position: relative;
-  padding-bottom: 50px;
+  padding-bottom: 41px;
   background-color: var(--lightgrey-color);
   overflow-x: hidden;
 
+  @media (min-width: $tablet-width) {
+    padding-bottom: 35px;
+  }
+
   @media (min-width: $desctop-width) {
-    padding-top: 145px;
-    margin-bottom: 55px;
+    padding-top: 155px;
+    margin-bottom: 13px;
+    padding-bottom: 65px;
   }
 
   &::before {
@@ -15,17 +20,17 @@
     top: 0;
     left: 0;
     width: 100%;
-    height: 30px;
+    height: 19px;
     // -webkit-clip-path: polygon(0 100%, 0 0, 100% 0);
     clip-path: polygon(0 100%, 0 0, 100% 0);
     background-color: var(--light-color);
 
     @media (min-width: $tablet-width) {
-      height: 55px;
+      height: 50px;
     }
 
     @media (min-width: $desctop-width) {
-      height: 100px;
+      height: 98px;
     }
   }
 }
@@ -41,7 +46,7 @@
   }
 
   @media (min-width: $desctop-width) {
-    max-width: 940px;
+    max-width: 980px;
     margin: 0 auto;
     padding: 0 20px;
   }
@@ -50,7 +55,8 @@
 .tariffs__control {
   display: flex;
   justify-content: center;
-  gap: 19px;
+  gap: 25px;
+  margin-left: -13px;
 }
 
 .tariffs__label {

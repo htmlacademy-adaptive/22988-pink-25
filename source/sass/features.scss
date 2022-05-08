@@ -1,7 +1,11 @@
 .features {
   position: relative;
-  padding-top: 90px;
+  padding-top: 83px;
   background-color: var(--lightgrey-color);
+
+  @media (min-width: $tablet-width) {
+    padding-top: 81px;
+  }
 
   &::before {
     content: "";
@@ -15,11 +19,11 @@
     background-color: var(--light-color);
 
     @media (min-width: $tablet-width) {
-      height: 55px;
+      height: 62px;
     }
 
     @media (min-width: $desctop-width) {
-      height: 100px;
+      height: 103px;
     }
   }
 }
@@ -35,9 +39,9 @@
       content: "";
       position: absolute;
       width: 268px;
-      height: 547px;
+      height: 482px;
       left: 20px;
-      top: -90px;
+      top: -71px;
       background-image: url("../img/iphone-screen3-tablet.png");
       background-repeat: no-repeat;
     }
@@ -51,7 +55,7 @@
   }
 
   @media (min-width: $desctop-width) {
-    max-width: 940px;
+    max-width: 980px;
     display: block;
 
     &::before {
@@ -68,30 +72,40 @@
 
   @media (min-width: $desctop-width) {
     width: auto;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-column: auto;
-    column-gap: 68px;
-    padding: 0 24px;
-    padding-top: 260px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding-top: 284px;
+    margin: 0 -10px;
   }
 }
 
 .features__item {
+  margin-bottom: 32px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
   @media (min-width: $tablet-width) {
-    margin-bottom: 46px;
+    margin-bottom: 36px;
+
+    &:last-child {
+      margin-bottom: 45px;
+    }
   }
 
   @media (min-width: $desctop-width) {
     position: relative;
+    width: 240px;
 
     &::before {
       content: "";
       position: absolute;
-      width: 382px;
-      height: 300px;
-      bottom: 250px;
-      left: -30px;
+      width: 300px;
+      height: 301px;
+      bottom: 267px;
+      left: -35px;
       background-repeat: no-repeat;
     }
 
@@ -109,16 +123,18 @@
 
     &:last-child {
       &::before {
+        bottom: 258px;
         background-image: url("../img/iphone-screen3-desc.png");
       }
     }
   }
 
   &--img {
-    padding-bottom: 386px;
+    padding-bottom: 321px;
     background-image: url("../img/iphone-screen-3.png");
     background-repeat: no-repeat;
-    background-position: 50% 170px;
+    background-position: 50% 152px;
+    background-size: 55%;
 
     @media (min-width: $tablet-width) {
       padding-bottom: 0;
@@ -134,7 +150,7 @@
   line-height: 24px;
   color: var(--dark-color);
   text-align: center;
-  margin-bottom: 24px;
+  margin-bottom: 10px;
 
   @media (min-width: $tablet-width) {
     text-align: left;
@@ -144,6 +160,7 @@
     font-size: 30px;
     line-height: 30px;
     text-align: center;
+    margin-bottom: 22px;
   }
 }
 

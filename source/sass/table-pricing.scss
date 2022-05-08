@@ -1,7 +1,7 @@
 .table-pricing {
   position: relative;
   padding-top: 100px;
-  margin-bottom: 45px;
+  margin-bottom: 39px;
   width: 834px;
   left: 50%;
   transform: translateX(-50%);
@@ -12,6 +12,7 @@
     width: 100%;
     left: auto;
     transform: none;
+    margin-bottom: 0;
   }
 
   @media (min-width: $desctop-width) {
@@ -21,7 +22,7 @@
 
 .table-pricing__item {
   border-right: 2px solid #e5e5e5;
-  padding: 16px 0 18px 0;
+  padding: 13px 0 25px 0;
 
   &:nth-child(2) {
     border-radius: 1px 0 0 0;
@@ -33,10 +34,15 @@
   }
 
   @media (min-width: $tablet-width) {
-    padding: 9px 0 6px 0;
+    padding: 12px 0 10px 2px;
+  }
+
+  @media (min-width: $desctop-width) {
+    padding: 3px 0 5px 4px;
   }
 
   &--tariffs {
+    width: auto;
     font-weight: 700;
     font-size: 16px;
     line-height: 30px;
@@ -45,7 +51,7 @@
     background-color: var(--darken-color);
 
     @media (min-width: $tablet-width) {
-      width: auto;
+      width: 155px;
     }
 
     @media (min-width: $desctop-width) {
@@ -61,6 +67,7 @@
 
     @media (min-width: $tablet-width) {
       display: block;
+      height: 82px;
     }
 
     @media (min-width: $desctop-width) {
@@ -87,6 +94,14 @@
         width: 61px;
         height: 61px;
         background-image: url("../img/hits-logo-tablet.svg");
+      }
+    }
+
+    @media (min-width: $desctop-width) {
+      &::before {
+        width: 74px;
+        height: 74px;
+        background-image: url("../img/hits-logo.svg");
       }
     }
   }
@@ -119,7 +134,7 @@
   }
 
   @media (min-width: $desctop-width) {
-    padding: 13px 15px 14px;
+    padding: 17px 20px 13px;
   }
 
   &--function {
@@ -134,11 +149,15 @@
     @media (min-width: $tablet-width) {
       display: table-cell;
     }
+
+    @media (min-width: $desctop-width) {
+      font-size: 18px;
+    }
   }
 
   &--on,
   &--off {
-    padding: 13px 20px;
+    padding: 15px 20px;
 
     @media (min-width: $tablet-width) {
       width: auto;
