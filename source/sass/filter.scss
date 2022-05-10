@@ -4,23 +4,24 @@
 
   @media (min-width: $tablet-width) {
     max-width: 660px;
+    padding-top: 37px;
   }
 
   @media (min-width: $desctop-width) {
-    max-width: 940px;
+    max-width: 980px;
   }
 }
 
 .filter__description {
+  margin: 0;
   font-weight: 400;
   font-size: 14px;
   line-height: 30px;
   text-align: center;
   color: var(--darken-color);
-  margin-bottom: 52px;
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 78px;
+    padding-bottom: 70px;
     font-size: 18px;
   }
 

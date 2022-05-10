@@ -1,57 +1,20 @@
 .collection-photo {
   margin: 0 auto;
   padding: 0;
-  margin-bottom: 20px;
-
-  @media (min-width: $tablet-width) {
-    margin-bottom: 50px;
-  }
-}
-
-.collection__image {
-  .collection-photo__image {
-    width: 280px;
-
-    @media (min-width: $tablet-width) {
-      width: 300px;
-      height: 300px;
-    }
-  }
-
-  .collection-photo__content {
-    width: 100%;
-
-    @media (min-width: $tablet-width) {
-      width: 300px;
-      flex-direction: column;
-      align-items: flex-start;
-    }
-  }
-
-  .collection-photo__descr {
-    @media (min-width: $tablet-width) {
-      order: 0;
-    }
-  }
-
-  .collection-photo__likes {
-    margin-top: auto;
-  }
-}
-
-.collection__wrapper {
-  max-width: 320px;
-  margin: 0 auto;
-  display: grid;
-
-  @media (min-width: $tablet-width) {
-    grid-template-columns: 1fr 1fr;
-    gap: 20px;
-  }
 }
 
 .collection-photo__link {
   display: block;
+
+  @media (min-width: $tablet-width) {
+    max-width: 660px;
+    height: 506px;
+    margin: 0 auto;
+  }
+
+  @media (min-width: $desctop-width) {
+    max-width: 100%;
+  }
 }
 
 .collection-photo__link-sticker {
@@ -101,24 +64,25 @@
 }
 
 .collection-photo__content {
-  width: 87.5%;
+  max-width: 280px;
   margin: 0 auto;
-  margin-top: -8px;
   display: flex;
   flex-direction: column;
-  padding: 18px 17px 21px;
+  padding: 15px 11px 18px 17px;
   background-color: var(--lightgrey-color);
 
   @media (min-width: $tablet-width) {
-    width: 93.9%;
+    max-width: 620px;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
+    padding: 18px 30px 26px 29px;
   }
 
   @media (min-width: $desctop-width) {
-    width: 78.3%;
+    max-width: 940px;
+    padding: 19px 31px 23px 27px;
   }
 }
 
@@ -126,7 +90,7 @@
   margin: 0;
   padding: 0;
   color: var(--darken-color);
-  margin-bottom: 14px;
+  margin-bottom: -1px;
 
   @media (min-width: $tablet-width) {
     margin-bottom: 0;
@@ -153,7 +117,7 @@
   font-weight: 400;
   font-size: 14px;
   line-height: 24px;
-  margin-bottom: 25px;
+  margin-bottom: 10px;
 
   @media (min-width: $tablet-width) {
     order: 3;
@@ -164,13 +128,9 @@
 
 .collection-photo__likes {
   display: flex;
+  flex-direction: row-reverse;
   align-items: center;
   margin-top: auto;
-
-  @media (min-width: $tablet-width) {
-    flex-direction: row-reverse;
-    margin-top: 0;
-  }
 }
 
 .collection-photo__btn-like {
