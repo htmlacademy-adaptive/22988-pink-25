@@ -1,40 +1,11 @@
 .intro {
-  display: flex;
-  justify-content: center;
+  width: 100%;
   background-color: #1d2631;
   margin-top: 462px;
-
-  &::before {
-    content: "";
-    position: absolute;
-    width: 320px;
-    height: 286px;
-    top: 176px;
-    background-image: url("../img/header-bg-mobile.png");
-    background-size: 100%;
-    background-repeat: no-repeat;
-    background-position: 0 0;
-  }
+  z-index: 1;
 
   @media (min-width: $tablet-width) {
     background-color: transparent;
-
-    &::before {
-      width: 660px;
-      height: 545px;
-      background-image: url("../img/header-bg-tablet.png");
-      top: 184px;
-    }
-  }
-
-  @media (min-width: $desctop-width) {
-    &::before {
-      width: 1050px;
-      height: 645px;
-      background-image: url("../img/header-bg-desc.png");
-      top: 208px;
-      background-position: 71px 0;
-    }
   }
 }
 
