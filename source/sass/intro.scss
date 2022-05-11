@@ -1,21 +1,32 @@
 .intro {
-  background-color: var(--darken-color);
+  width: 100%;
+  background-color: #1d2631;
+  margin-top: 462px;
+  z-index: 1;
+
+  @media (min-width: $tablet-width) {
+    background-color: transparent;
+  }
 }
 
 .intro__wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   max-width: 320px;
   margin: 0 auto;
   padding: 0 20px;
 
   @media (min-width: $tablet-width) {
-    max-width: 660px;
+    min-width: 660px;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+    z-index: 1;
   }
 
   @media (min-width: $desctop-width) {
-    max-width: 940px;
+    min-width: 960px;
   }
 }
 
@@ -34,35 +45,78 @@
   line-height: 18px;
   color: var(--light-color);
   text-decoration: none;
+  margin-bottom: 35px;
+  border: 3px solid var(--light-color);
+  border-radius: 100px;
+  padding: 15px 0;
+  text-align: center;
+  width: 280px;
+  transition: all 0.1s ease-in-out;
+
+  &:hover {
+    background-color: var(--light-color);
+    color: var(--red-color);
+    transition: all 0.1s ease-in-out;
+  }
+
+  &:active {
+    color: rgb(210, 40, 86, 0.3);
+    transition: all 0.1s ease-in-out;
+  }
+
+  @media (min-width: $tablet-width) {
+    width: 300px;
+    margin-bottom: 47px;
+  }
+
+  @media (min-width: $desctop-width) {
+    margin-left: -10px;
+    font-size: 21px;
+    margin-bottom: 71px;
+  }
+}
+
+.intro__list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+  margin-bottom: 18px;
+
+  @media (min-width: $tablet-width) {
+    margin-left: 43px;
+    margin-bottom: 32px;
+  }
+
+  @media (min-width: $desctop-width) {
+    margin-left: 32px;
+    margin-bottom: 51px;
+  }
 }
 
 .intro__link {
-  display: inline-block;
-  width: 47px;
+  width: 56px;
   height: 56px;
-  font-size: 0;
-
-  &--apple {
-    background-image: url("../img/apple-logo.svg");
-    background-repeat: no-repeat;
-  }
-
-  &--android {
-    background-image: url("../img/android-logo.svg");
-    background-repeat: no-repeat;
-  }
-
-  &--microsoft {
-    background-image: url("../img/microsoft-logo.svg");
-    background-repeat: no-repeat;
-  }
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .intro__description {
+  margin: 0;
+  padding: 0;
   font-weight: 300;
   font-size: 14px;
   line-height: 24px;
   text-align: center;
   color: var(--light-color);
-  padding-bottom: 38px;
+  padding-bottom: 31px;
+
+  @media (min-width: $tablet-width) {
+    width: 300px;
+    font-size: 18px;
+  }
+
+  @media (min-width: $desctop-width) {
+    margin-left: -10px;
+  }
 }

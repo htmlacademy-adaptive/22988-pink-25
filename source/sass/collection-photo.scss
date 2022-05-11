@@ -1,0 +1,160 @@
+.collection-photo {
+  margin: 0 auto;
+  padding: 0;
+}
+
+.collection-photo__link {
+  display: block;
+
+  @media (min-width: $tablet-width) {
+    max-width: 660px;
+    height: 506px;
+    margin: 0 auto;
+  }
+
+  @media (min-width: $desctop-width) {
+    max-width: 100%;
+  }
+}
+
+.collection-photo__link-sticker {
+  position: relative;
+
+  &::before {
+    content: attr(data-sticker-text);
+    position: absolute;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 24px;
+    text-transform: uppercase;
+    top: 0;
+    right: 20px;
+    padding: 6px 20px;
+    background-color: var(--red-color);
+    color: var(--light-color);
+
+    @media (min-width: $tablet-width) {
+      top: 57px;
+    }
+
+    @media (min-width: $desctop-width) {
+      top: 54px;
+      right: 130px;
+    }
+  }
+}
+
+.collection-photo__user {
+  @media (min-width: $tablet-width) {
+    height: 509px;
+    object-fit: cover;
+  }
+
+  @media (min-width: $desctop-width) {
+    height: auto;
+    width: 100%;
+    object-fit: contain;
+  }
+}
+
+.collection-photo__image {
+  width: 280px;
+  height: 180px;
+  object-fit: cover;
+}
+
+.collection-photo__content {
+  max-width: 280px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  padding: 15px 11px 18px 17px;
+  background-color: var(--lightgrey-color);
+
+  @media (min-width: $tablet-width) {
+    max-width: 620px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 18px 30px 26px 29px;
+  }
+
+  @media (min-width: $desctop-width) {
+    max-width: 940px;
+    padding: 19px 31px 23px 27px;
+  }
+}
+
+.collection-photo__author {
+  margin: 0;
+  padding: 0;
+  color: var(--darken-color);
+  margin-bottom: -1px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 0;
+  }
+}
+
+.collection-photo__name {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 24px;
+}
+
+.collection-photo__time {
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 24px;
+  text-transform: uppercase;
+}
+
+.collection-photo__descr {
+  margin: 0;
+  padding: 0;
+  width: 253px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  margin-bottom: 10px;
+
+  @media (min-width: $tablet-width) {
+    order: 3;
+    width: 100%;
+    margin-bottom: 0;
+  }
+}
+
+.collection-photo__likes {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  margin-top: auto;
+}
+
+.collection-photo__btn-like {
+  width: 13px;
+  height: 12px;
+  padding: 0;
+  background: transparent;
+  border: none;
+  background-image: url("../img/heart.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  cursor: pointer;
+}
+
+.collection-photo__like-descr {
+  margin-left: 18px;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 24px;
+  text-transform: uppercase;
+  color: var(--red-color);
+
+  @media (min-width: $tablet-width) {
+    margin-left: 0;
+    margin-right: 16px;
+  }
+}

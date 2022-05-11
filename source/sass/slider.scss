@@ -1,0 +1,12 @@
+.slider__list {
+  position: relative;
+}
+
+.slider__control {
+  position: absolute;
+  width: 100%;
+  top: 28px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}

@@ -1,32 +1,84 @@
 .main-header {
+  position: relative;
+  display: flex;
+  justify-content: center;
   background-image: url("../img/bg-mobile.jpg");
   background-size: 100%;
   background-position: 50% 0;
   background-repeat: no-repeat;
-  min-height: 240px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 320px;
+    height: 286px;
+    top: 176px;
+    background-image: url("../img/header-bg-mobile.png");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center 0;
+  }
 
   @media (min-width: $tablet-width) {
     background-image: url("../img/bg-desktop.jpg");
-    background-size: 100%;
+    background-size: cover;
     background-position: 50% 0;
     background-repeat: no-repeat;
+    padding-bottom: 82px;
+
+    &::before {
+      width: 660px;
+      height: 545px;
+      background-image: url("../img/header-bg-tablet.png");
+      top: auto;
+      bottom: 0;
+    }
+  }
+
+  @media (min-width: $desctop-width) {
+    padding-bottom: 93px;
+
+    &::before {
+      width: 1050px;
+      height: 645px;
+      background-image: url("../img/header-bg-desc.png");
+      background-position: 71px 0;
+    }
+  }
+}
+
+.main-header__logo {
+  margin-bottom: -5px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 10px;
+  }
+}
+
+.main-header__catalog {
+  padding-bottom: 77px;
+
+  &::before {
+    display: none;
+  }
+
+  @media (min-width: $tablet-width) {
+    min-height: auto;
+    padding-bottom: 128px;
+  }
+
+  @media (min-width: $desctop-width) {
+    padding-bottom: 88px;
   }
 }
 
 .main-header__wrapper {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
   width: 100%;
   margin: 0 auto;
-  padding: 0 20px;
-
-  @media (min-width: $tablet-width) {
-    max-width: 660px;
-  }
 
   @media (min-width: $desctop-width) {
-    max-width: 940px;
+    width: auto;
+    margin: 0;
   }
 }
 
@@ -60,12 +112,40 @@
   }
 }
 
+.main-header__info {
+  margin-top: -372px;
+  margin-bottom: 343px;
+
+  @media (min-width: $tablet-width) {
+    width: 240px;
+    margin-top: -258px;
+    margin-bottom: 31px;
+    margin-left: 30px;
+  }
+
+  @media (min-width: $desctop-width) {
+    margin-top: -253px;
+    margin-left: 20px;
+    margin-bottom: 36px;
+  }
+}
+
 .main-header__intro {
   width: 75%;
   display: flex;
   justify-content: center;
   align-items: center;
   margin: 0 auto;
+  padding-top: 94px;
+
+  @media (min-width: $tablet-width) {
+    width: 358px;
+    padding-top: 176px;
+  }
+
+  @media (min-width: $desctop-width) {
+    padding-top: 170px;
+  }
 }
 
 .main-header__title {
