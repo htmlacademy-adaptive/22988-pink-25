@@ -1,5 +1,6 @@
 .collection-photo {
   margin: 0 auto;
+  margin-bottom: 20px;
   padding: 0;
 }
 
@@ -51,7 +52,7 @@
   }
 
   @media (min-width: $desctop-width) {
-    height: auto;
+    height: 506px;
     width: 100%;
     object-fit: contain;
   }
@@ -68,7 +69,7 @@
   margin: 0 auto;
   display: flex;
   flex-direction: column;
-  padding: 15px 11px 18px 17px;
+  padding: 17px 11px 18px 17px;
   background-color: var(--lightgrey-color);
 
   @media (min-width: $tablet-width) {
@@ -128,9 +129,12 @@
 
 .collection-photo__likes {
   display: flex;
-  flex-direction: row-reverse;
   align-items: center;
   margin-top: auto;
+
+  @media (min-width: $tablet-width) {
+    flex-direction: row-reverse;
+  }
 }
 
 .collection-photo__btn-like {
