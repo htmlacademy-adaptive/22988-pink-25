@@ -2,6 +2,10 @@
   margin: 0 auto;
   margin-bottom: 20px;
   padding: 0;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 0;
+  }
 }
 
 .collection-photo__link {
@@ -14,7 +18,7 @@
   }
 
   @media (min-width: $desctop-width) {
-    max-width: 100%;
+    max-width: 1440px;
   }
 }
 
@@ -54,7 +58,7 @@
   @media (min-width: $desctop-width) {
     height: 506px;
     width: 100%;
-    object-fit: contain;
+    object-fit: cover;
   }
 }
 
@@ -78,7 +82,7 @@
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
-    padding: 18px 30px 26px 29px;
+    padding: 21px 30px 26px 29px;
   }
 
   @media (min-width: $desctop-width) {

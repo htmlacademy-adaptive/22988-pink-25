@@ -4,6 +4,11 @@
 
   @media (min-width: $tablet-width) {
     padding-top: 91px;
+    margin-bottom: 64px;
+  }
+
+  @media (min-width: $desctop-width) {
+    margin-bottom: 59px;
   }
 }
 

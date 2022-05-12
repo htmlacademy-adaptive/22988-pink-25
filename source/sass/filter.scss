@@ -1,9 +1,9 @@
-.filter {
-  margin-bottom: 40px;
-}
-
 .filter__intro {
   margin-bottom: 40px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 0;
+  }
 }
 
 .filter__description {
@@ -20,24 +20,25 @@
   }
 
   @media (min-width: $desctop-width) {
-    margin-bottom: 75px;
+    padding-bottom: 67px;
   }
 }
 
 .filter__wrapper {
   min-width: 320px;
-  max-width: 960px;
+  max-width: 980px;
   margin: 0 auto;
   padding: 0 20px;
   padding-bottom: 40px;
 
   @media (min-width: $tablet-width) {
-    max-width: 660px;
-    padding-top: 37px;
+    padding-top: 55px;
+    padding-bottom: 55px;
   }
 
   @media (min-width: $desctop-width) {
-    max-width: 980px;
+    max-width: 940px;
+    padding: 57px 20px 33px 20px;
   }
 }
 
@@ -51,10 +52,60 @@
   align-items: center;
   padding-top: 20px;
   background-color: var(--lightgrey-color);
+
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: flex-start;
+    gap: 20px;
+    padding-top: 0;
+  }
+}
+
+.filter__photo {
+  @media (min-width: $tablet-width) {
+    margin-left: auto;
+  }
+
+  @media (min-width: $desctop-width) {
+    margin-right: auto;
+    margin-left: 60px;
+  }
+}
+
+.filter__user-photo {
+  width: 300px;
+  height: 372px;
+
+  @media (min-width: $tablet-width) {
+    height: 400px;
+  }
+}
+
+.filter__controls {
+  @media (min-width: $tablet-width) {
+    width: 275px;
+    margin-left: 28px;
+    margin-top: -14px;
+  }
+
+  @media (min-width: $desctop-width) {
+    width: 410px;
+    margin-left: -12px;
+    margin-top: -16px;
+  }
 }
 
 .filter__list {
-  padding: 43px 18px 0;
+  padding: 29px 18px 0;
+
+  @media (min-width: $tablet-width) {
+    padding: 0;
+  }
+
+  @media (min-width: $desctop-width) {
+    margin-bottom: 146px;
+  }
 }
 
 .filter__item-buttons {
@@ -63,6 +114,10 @@
   align-items: center;
   justify-content: space-around;
   margin-bottom: 35px;
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
 }
 
 .filter__button {
@@ -89,7 +144,10 @@
   padding-bottom: 32px;
 
   @media (min-width: $tablet-width) {
-    display: block;
+    display: flex;
+    align-items: center;
+    height: 72px;
+    padding-bottom: 0;
   }
 
   &::before {
@@ -100,6 +158,11 @@
     left: -40px;
     background-color: rgb(40, 54, 69, 0.1);
     bottom: 0;
+
+    @media (min-width: $tablet-width) {
+      width: 100%;
+      left: 0;
+    }
   }
 }
 
@@ -111,7 +174,59 @@
   display: none;
 
   @media (min-width: $tablet-width) {
-    display: block;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 24px;
+    height: 24px;
+  }
+
+  @media (min-width: $desctop-width) {
+    width: 48px;
+    height: 48px;
+  }
+}
+
+.filter__icon {
+  @media (min-width: $tablet-width) {
+    width: 24px;
+    height: 24px;
+
+    path {
+      fill: var(--red-color);
+    }
+
+    &--crop {
+      width: 22px;
+      height: 22px;
+    }
+
+    &--fill {
+      width: 24px;
+      height: 22px;
+    }
+
+    &--contrast {
+      width: 16px;
+      height: 16px;
+    }
+  }
+
+  @media (min-width: $desctop-width) {
+    &--crop {
+      width: 44px;
+      height: 44px;
+    }
+
+    &--fill {
+      width: 48px;
+      height: 43px;
+    }
+
+    &--contrast {
+      width: 32px;
+      height: 32px;
+    }
   }
 }
 
@@ -120,6 +235,16 @@
   width: 100%;
   height: 2px;
   background-color: var(--darken-color);
+
+  @media (min-width: $tablet-width) {
+    width: 202px;
+    margin-left: 28px;
+  }
+
+  @media (min-width: $desctop-width) {
+    width: 288px;
+    margin-left: 46px;
+  }
 }
 
 .filter__range[type="range"]::-webkit-slider-thumb {
@@ -140,6 +265,17 @@
   flex-direction: column;
   flex-wrap: wrap;
   padding-top: 38px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 67px;
+  }
+
+  @media (min-width: $desctop-width) {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-top: 0;
+  }
 }
 
 .filter__btn {
@@ -147,7 +283,7 @@
   background-color: transparent;
   border: 3px solid var(--red-color);
   border-radius: 30px;
-  padding: 15px 90px;
+  padding: 15px 30px;
   margin-bottom: 12px;
   font-weight: 700;
   font-size: 18px;
@@ -189,6 +325,19 @@
       color: rgb(255, 255, 255, 0.3);
       background-color: rgb(40, 54, 69, 0.3);
       border-color: transparent;
+    }
+  }
+
+  @media (min-width: $tablet-width) {
+    width: 259px;
+    margin-bottom: 24px;
+  }
+
+  @media (min-width: $desctop-width) {
+    width: 183px;
+
+    &:last-child {
+      margin-bottom: auto;
     }
   }
 }

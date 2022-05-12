@@ -58,6 +58,12 @@
 .main-header__catalog {
   padding-bottom: 77px;
 
+  .main-nav__link--current {
+    @media (min-width: $desctop-width) {
+      padding-bottom: 7px;
+    }
+  }
+
   &::before {
     display: none;
   }
@@ -69,6 +75,22 @@
 
   @media (min-width: $desctop-width) {
     padding-bottom: 88px;
+  }
+}
+
+.main-header__competition {
+  padding-bottom: 44px;
+
+  .main-header__intro {
+    @media (min-width: $tablet-width) {
+      width: 620px;
+      padding-bottom: 16px;
+    }
+
+    @media (min-width: $desctop-width) {
+      width: 747px;
+      padding-bottom: 44px;
+    }
   }
 }
 
@@ -113,7 +135,7 @@
 }
 
 .main-header__info {
-  margin-top: -372px;
+  margin-top: -373px;
   margin-bottom: 343px;
 
   @media (min-width: $tablet-width) {
@@ -146,19 +168,28 @@
   @media (min-width: $desctop-width) {
     padding-top: 170px;
   }
+
+  .main-header__title {
+    line-height: 33px;
+
+    @media (min-width: $tablet-width) {
+      font-size: 50px;
+      line-height: 68px;
+    }
+  }
 }
 
 .main-header__title {
   margin: 0;
   font-weight: 300;
   font-size: 24px;
-  line-height: 33px;
+  line-height: 29px;
   text-align: center;
   color: var(--light-color);
 
   @media (min-width: $tablet-width) {
-    font-size: 50px;
-    line-height: 68px;
+    font-size: 40px;
+    line-height: 48px;
   }
 }
 
