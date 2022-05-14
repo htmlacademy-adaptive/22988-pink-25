@@ -123,6 +123,7 @@
 .reviews__prev,
 .reviews__next {
   display: none;
+  cursor: pointer;
 
   @media (min-width: $desctop-width) {
     display: block;

@@ -186,12 +186,12 @@
         content: "";
         position: absolute;
         width: 60px;
-        height: 62px;
+        height: 59px;
         background-color: #e5e5e5;
         background-repeat: no-repeat;
         background-position: 50%;
-        top: 0;
-        right: 0;
+        top: 2px;
+        right: 2px;
       }
     }
 
@@ -253,6 +253,15 @@
     font-size: 18px;
     line-height: 30px;
     color: var(--darken-color);
+  }
+
+  &:hover {
+    border-color: var(--darken-color);
+  }
+
+  &:focus {
+    outline: none;
+    border-color: var(--red-color);
   }
 
   @media (min-width: $tablet-width) {
@@ -479,6 +488,18 @@
   color: var(--darken-color);
   cursor: pointer;
 
+  &:hover {
+    &::before {
+      border-color: var(--darken-color);
+    }
+  }
+
+  &:active {
+    &::before {
+      border-color: var(--red-color);
+    }
+  }
+
   &::before {
     content: "";
     position: absolute;
@@ -515,6 +536,19 @@
   position: relative;
   display: block;
   padding-left: 70px;
+  cursor: pointer;
+
+  &:hover {
+    &::before {
+      border-color: var(--darken-color);
+    }
+  }
+
+  &:active {
+    &::before {
+      border-color: var(--red-color);
+    }
+  }
 
   &::before {
     content: "";
@@ -562,6 +596,15 @@
   min-height: 200px;
   resize: vertical;
 
+  &:hover {
+    border-color: var(--darken-color);
+  }
+
+  &:focus {
+    outline: none;
+    border-color: var(--red-color);
+  }
+
   &::placeholder {
     font-family: "Open Sans", sans-serif;
     font-weight: 400;
@@ -603,6 +646,18 @@
   background-color: var(--green-color);
   margin-bottom: 34px;
   padding: 10px;
+
+  &:hover {
+    background-color: #1c9b5e;
+  }
+
+  &:active {
+    color: rgba(255, 255, 255, 0.3);
+  }
+
+  &:disabled {
+    background-color: #e5e5e5;
+  }
 }
 
 .form-feedback__button {
