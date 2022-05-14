@@ -1,9 +1,14 @@
 .collection {
   padding-top: 44px;
-  margin-bottom: 64px;
+  margin-bottom: 25px;
 
   @media (min-width: $tablet-width) {
     padding-top: 91px;
+    margin-bottom: 64px;
+  }
+
+  @media (min-width: $desctop-width) {
+    margin-bottom: 59px;
   }
 }
 
@@ -29,6 +34,7 @@
 .collection__image {
   display: flex;
   flex-direction: column;
+  margin-bottom: 0;
 
   .collection-photo__link {
     @media (min-width: $tablet-width) {
@@ -113,15 +119,14 @@
 .collection__wrapper {
   max-width: 320px;
   padding: 0 20px;
-  padding-top: 11px;
   margin: 0 auto;
   display: grid;
-  gap: 20px;
 
   @media (min-width: $tablet-width) {
     max-width: 660px;
     grid-template-columns: 1fr 1fr;
     padding-top: 49px;
+    gap: 20px;
   }
 
   @media (min-width: $desctop-width) {

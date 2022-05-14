@@ -10,6 +10,26 @@
   }
 }
 
+.main-footer__catalog {
+  .main-footer__social {
+    padding-top: 40px;
+
+    @media (min-width: $tablet-width) {
+      padding-top: 36px;
+    }
+
+    @media (min-width: $desctop-width) {
+      padding-top: 96px;
+    }
+  }
+}
+
+.main-footer__competition {
+  .main-footer__social {
+    padding-top: 54px;
+  }
+}
+
 .main-footer__wrapper {
   max-width: 320px;
   width: 100%;
