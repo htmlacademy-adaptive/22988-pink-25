@@ -73,7 +73,7 @@
   margin: 0 auto;
   display: flex;
   flex-direction: column;
-  padding: 17px 11px 18px 17px;
+  padding: 14px 11px 18px 17px;
   background-color: var(--lightgrey-color);
 
   @media (min-width: $tablet-width) {
@@ -128,6 +128,10 @@
     order: 3;
     width: 100%;
     margin-bottom: 0;
+
+    br {
+      display: none;
+    }
   }
 }
 

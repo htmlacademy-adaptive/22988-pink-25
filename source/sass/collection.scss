@@ -1,6 +1,6 @@
 .collection {
   padding-top: 44px;
-  margin-bottom: 25px;
+  margin-bottom: 18px;
 
   @media (min-width: $tablet-width) {
     padding-top: 91px;
@@ -62,7 +62,7 @@
 
   .collection-photo__content {
     width: 100%;
-    padding: 14px 11px 19px 17px;
+    padding: 14px 11px 20px 17px;
 
     @media (min-width: $tablet-width) {
       flex-direction: column;

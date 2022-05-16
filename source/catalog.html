@@ -9,13 +9,13 @@
 </head>
 
 <body class="page__body">
-  <header class="main-header main-header__catalog">
+  <header class="main-header main-header--catalog">
     <h1 class="visually-hidden">Pink</h1>
     <!-- main-nav--closed меню закрыто, отображение бургера -->
     <!-- main-nav--opened меню открыто, отображение крестика закрытия меню -->
     <nav class="main-nav main-nav--closed main-nav--nojs">
       <div class="main-nav__inner">
-        <div class="main-nav__logo-wrapper intro__wrapper-content">
+        <div class="main-nav__logo-wrapper">
           <a class="main-header__logo" href="#">
             <svg class="logo-pink-mobile" width="74" height="23" viewBox="0 0 74 23" fill="none"
               xmlns="http://www.w3.org/2000/svg">
@@ -123,7 +123,9 @@
       <figure class="collection-photo">
         <a class="collection-photo__link collection-photo__link-sticker" href="#" data-sticker-text="Панорама дня">
           <picture>
-            <img class="collection-photo__user" src="./img/panorama-desc.jpg" alt="Панорама дня" width="1200"
+            <source media="(min-width: 1080px)" srcset="img/panorama-desktop.jpg 1x, img/panorama-desktop@2x.jpg 2x">
+            <source media="(min-width: 768px)" srcset="img/panorama-tablet.jpg 1x, img/panorama-tablet@2x.png 2x">
+            <img class="collection-photo__user" src="img/panorama-mobile.jpg" srcset="img/panorama-mobile@2x.jpg 2x" alt="Панорама дня" width="1200"
               height="506">
           </picture>
         </a>
@@ -133,7 +135,7 @@
             <b class="collection-photo__name">Анна</b>
             <span class="collection-photo__time">(5 минут назад)</span>
           </p>
-          <p class="collection-photo__descr">Прыгать или нет? Напишите в коментарии свой совет и смотрите прямую
+          <p class="collection-photo__descr">Прыгать или нет? Напишите в комментарии свой совет и <br> смотрите прямую
             трансляцию в перископе, задавайте свои вопросы!</p>
 
           <div class="collection-photo__likes">
@@ -148,7 +150,9 @@
         <figure class="collection__image collection-photo">
           <a class="collection-photo__link" href="#">
             <picture>
-              <img class="collection-photo__image" src="./img/photo-1.jpg" alt="Панорама дня" width="280" height="180">
+              <source media="(min-width: 1080px)" srcset="img/photo-1-desktop.jpg 1x, img/photo-1-desktop@2x.jpg 2x">
+              <source media="(min-width: 768px)" srcset="img/photo-1-tablet.jpg 1x, img/photo-1-tablet@2x.jpg 2x">
+              <img class="collection-photo__image" src="img/photo-1-mobile.jpg" srcset="img/photo-1-mobile@2x.png 2x" alt="Панорама дня" width="280" height="180">
             </picture>
           </a>
           <figcaption class="collection-photo__content">
@@ -168,7 +172,9 @@
         <figure class="collection__image collection-photo">
           <a class="collection-photo__link" href="#">
             <picture>
-              <img class="collection-photo__image" src="./img/photo-2.jpg" alt="Барабаны" width="280" height="180">
+              <source media="(min-width: 1080px)" srcset="img/photo-2-desktop.jpg 1x, img/photo-2-desktop@2x.jpg 2x">
+              <source media="(min-width: 768px)" srcset="img/photo-2-tablet.jpg 1x, img/photo-2-tablet@2x.jpg 2x">
+              <img class="collection-photo__image" src="img/photo-2-mobile.jpg" srcset="img/photo-2-mobile@2x.jpg 2x" alt="Барабаны" width="280" height="180">
             </picture>
           </a>
           <figcaption class="collection-photo__content">
@@ -187,7 +193,9 @@
         <figure class="collection__image collection-photo">
           <a class="collection-photo__link" href="#">
             <picture>
-              <img class="collection-photo__image" src="./img/photo-3.jpg" alt="стеклянная краша" width="280"
+              <source media="(min-width: 1080px)" srcset="img/photo-3-desktop.jpg 1x, img/photo-3-desktop@2x.jpg 2x">
+              <source media="(min-width: 768px)" srcset="img/photo-3-tablet.jpg 1x, img/photo-3-tablet@2x.jpg 2x">
+              <img class="collection-photo__image" src="img/photo-3-mobile.jpg" srcset="img/photo-3-mobile@2x.jpg 2x" alt="стеклянная краша" width="280"
                 height="180">
             </picture>
           </a>
@@ -207,7 +215,9 @@
         <figure class="collection__image collection-photo">
           <a class="collection-photo__link" href="#">
             <picture>
-              <img class="collection-photo__image" src="./img/photo-4.jpg" alt="Кубанская бахча" width="280"
+              <source media="(min-width: 1080px)" srcset="img/photo-4-desktop.jpg 1x, img/photo-4-desktop@2x.jpg">
+              <source media="(min-width: 768px)" srcset="img/photo-4-tablet.jpg 1x, img/photo-4-tablet@2x.jpg 2x">
+              <img class="collection-photo__image" src="img/photo-4-mobile.jpg" srcset="img/photo-4-mobile@2x.jpg 2x" alt="Кубанская бахча" width="280"
                 height="180">
             </picture>
           </a>
@@ -227,7 +237,9 @@
         <figure class="collection__image collection-photo">
           <a class="collection-photo__link" href="#">
             <picture>
-              <img class="collection-photo__image" src="./img/photo-5.jpg" alt="Над пропастью" width="280" height="180">
+              <source media="(min-width: 1080px)" srcset="img/photo-5-desktop.jpg 1x, img/photo-5-desktop@2x.jpg 2x">
+              <source media="(min-width: 768px)" srcset="img/photo-5-tablet.jpg 1x, img/photo-5-tablet@2x.jpg 2x">
+              <img class="collection-photo__image" src="img/photo-5-mobile.jpg" srcset="img/photo-5-mobile@2x.jpg 2x" alt="Над пропастью" width="280" height="180">
             </picture>
           </a>
           <figcaption class="collection-photo__content">
@@ -246,7 +258,9 @@
         <figure class="collection__image collection-photo">
           <a class="collection-photo__link" href="#">
             <picture>
-              <img class="collection-photo__image" src="./img/photo-6.jpg" alt="Крыло самолета в небе" width="280"
+              <source media="(min-width: 1080px)" srcset="img/photo-6-desktop.jpg 1x, img/photo-6-desktop@2x.jpg 2x">
+              <source media="(min-width: 768px)" srcset="img/photo-6-tablet.jpg 1x, img/photo-6-tablet@2x.jpg 2x">
+              <img class="collection-photo__image" src="img/photo-6-mobile.jpg" srcset="img/photo-6-mobile@2x.jpg 2x" alt="Крыло самолета в небе" width="280"
                 height="180">
             </picture>
           </a>
@@ -275,7 +289,9 @@
       <div class="filter__wrapper  filter__inner">
         <form class="filter__form" method="post" action="https://echo.htmlacademy.ru">
           <picture class="filter__photo">
-            <img class="filter__user-photo" src="./img/filter-photo.jpg" alt="Фото для редактирования" width="300"
+            <source media="(min-width: 1080px)" srcset="img/filter-photo-desktop.jpg 1x, img/filter-photo-desktop@2x.jpg 2x">
+            <source media="(min-width: 768px)" srcset="img/filter-photo-tablet.jpg 1x, img/filter-photo-tablet@2x.jpg 2x">
+            <img class="filter__user-photo" src="img/filter-photo-mobile.jpg" srcset="img/filter-photo-mobile@2x.jpg 2x" alt="Фото для редактирования" width="300"
               height="400">
           </picture>
           <div class="filter__controls">
@@ -312,7 +328,7 @@
                   </svg>
                 </button>
               </div>
-              <div class="fitler__option filter__option--current">
+              <div class="filter__option filter__option--current">
                 <div class="filter__icon-inner">
                   <svg class="filter__icon filter__icon--crop" width="44" height="44" viewBox="0 0 44 44" fill="none"
                     xmlns="http://www.w3.org/2000/svg">
@@ -323,7 +339,7 @@
                 </div>
                 <input class="filter__range" type="range" min="1" max="100" name="crop" value="86">
               </div>
-              <div class="fitler__option">
+              <div class="filter__option">
                 <div class="filter__icon-inner">
                   <svg class="filter__icon filter__icon--fill" width="48" height="43" viewBox="0 0 48 43" fill="none" xmlns="http://www.w3.org/2000/svg">
                       <path
@@ -334,7 +350,7 @@
                 </div>
                 <input class="filter__range" type="range" min="1" max="100" name="fill" value="14">
               </div>
-              <div class="fitler__option">
+              <div class="filter__option">
                 <div class="filter__icon-inner">
                   <svg class="filter__icon filter__icon--contrast" width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
                       <path
@@ -359,7 +375,7 @@
     </section>
   </main>
 
-  <footer class="main-footer main-footer__catalog">
+  <footer class="main-footer main-footer--catalog">
     <div class="main-footer__social">
       <div class="main-footer__wrapper">
         <div class="main-footer__logo">
