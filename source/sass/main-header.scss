@@ -7,42 +7,76 @@
   background-position: 50% 0;
   background-repeat: no-repeat;
 
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/bg-mobile@2x.jpg");
+    background-size: 320px 462px;
+  }
+
   &::before {
     content: "";
     position: absolute;
     width: 320px;
     height: 286px;
     top: 176px;
-    background-image: url("../img/header-bg-mobile.png");
+    background-image: url("../img/header-iphone-mobile.png");
     background-size: 100%;
     background-repeat: no-repeat;
     background-position: center 0;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/header-iphone-mobile@2x.png");
+      background-size: 320px 286px;
+    }
   }
 
   @media (min-width: $tablet-width) {
-    background-image: url("../img/bg-desktop.jpg");
-    background-size: cover;
-    background-position: 50% 0;
+    background-image: url("../img/bg-tablet.jpg");
     background-repeat: no-repeat;
+    background-position: 50% 0;
+    background-size: cover;
     padding-bottom: 82px;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/bg-tablet@2x.jpg");
+      background-size: 1200px auto;
+    }
 
     &::before {
       width: 660px;
       height: 545px;
-      background-image: url("../img/header-bg-tablet.png");
+      background-image: url("../img/header-iphone-tablet.png");
       top: auto;
       bottom: 0;
+
+      @media (min-resolution: 2dppx) {
+        background-image: url("../img/header-iphone-tablet@2x.png");
+        background-size: 660px auto;
+      }
     }
   }
 
   @media (min-width: $desctop-width) {
     padding-bottom: 93px;
+    background-image: url("../img/bg-desktop.jpg");
+    background-repeat: no-repeat;
+    background-position: 50% 0;
+    background-size: cover;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/bg-desktop@2x.jpg");
+      background-size: 2560px auto;
+    }
 
     &::before {
       width: 1050px;
       height: 645px;
-      background-image: url("../img/header-bg-desc.png");
+      background-image: url("../img/header-iphone-desktop.png");
       background-position: 71px 0;
+
+      @media (min-resolution: 2dppx) {
+        background-image: url("../img/header-iphone-desktop@2x.png");
+        background-size: 1050px auto;
+      }
     }
   }
 }
@@ -190,6 +224,11 @@
   @media (min-width: $tablet-width) {
     font-size: 40px;
     line-height: 48px;
+  }
+
+  @media (min-width: $desctop-width) {
+    font-size: 50px;
+    line-height: 68px;
   }
 }
 
