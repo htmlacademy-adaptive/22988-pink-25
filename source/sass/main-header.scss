@@ -9,7 +9,6 @@
 
   @media (min-resolution: 2dppx) {
     background-image: url("../img/bg-mobile@2x.jpg");
-    background-size: 320px 462px;
   }
 
   &::before {
@@ -64,7 +63,6 @@
 
     @media (min-resolution: 2dppx) {
       background-image: url("../img/bg-desktop@2x.jpg");
-      background-size: 2560px auto;
     }
 
     &::before {
@@ -89,7 +87,7 @@
   }
 }
 
-.main-header__catalog {
+.main-header--catalog {
   padding-bottom: 77px;
 
   .main-nav__link--current {
@@ -112,7 +110,7 @@
   }
 }
 
-.main-header__competition {
+.main-header--competition {
   padding-bottom: 44px;
 
   .main-header__intro {
