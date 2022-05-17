@@ -134,9 +134,11 @@
 
   &:hover {
     color: var(--darken-color);
+    text-decoration: underline;
   }
 
   &:active {
     color: rgb(40, 54, 69, 0.3);
+    text-decoration: none;
   }
 }

@@ -81,6 +81,11 @@
 
 .main-header__logo {
   margin-bottom: -5px;
+  cursor: pointer;
+
+  &:active {
+    opacity: 0.3;
+  }
 
   @media (min-width: $tablet-width) {
     margin-bottom: 10px;
@@ -163,6 +168,12 @@
 
   @media (min-width: $desctop-width) {
     display: inline-block;
+
+    &:hover {
+      path {
+        fill: var(--red-color);
+      }
+    }
   }
 }
 
