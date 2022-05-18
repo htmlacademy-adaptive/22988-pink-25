@@ -122,6 +122,7 @@
 
 .reviews__prev,
 .reviews__next {
+  position: absolute;
   display: none;
   cursor: pointer;
 
@@ -133,16 +134,25 @@
     background: transparent;
     border: none;
     background-repeat: no-repeat;
+    fill: rgb(40, 54, 69, 0.3);
+    transition: all 0.1s ease-in-out;
+
+    &:hover {
+      fill: rgb(40, 54, 69, 0.6);
+    }
+
+    &:active {
+      opacity: 0.1;
+    }
   }
 }
 
 .reviews__prev {
-  background-image: url("../img/arrow-slider.svg");
+  left: -5px;
 }
 
 .reviews__next {
-  background-image: url("../img/arrow-slider.svg");
-  transform: rotate(180deg);
+  right: 5px;
 }
 
 .reviews__toggles {

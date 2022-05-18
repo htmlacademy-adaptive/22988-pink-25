@@ -165,14 +165,15 @@
 
 .logo-pink-desctop {
   display: none;
+  fill: var(--light-color);
+  transition: all 0.2s ease-in-out;
 
   @media (min-width: $desctop-width) {
     display: inline-block;
 
     &:hover {
-      path {
-        fill: var(--red-color);
-      }
+      fill: var(--red-color);
+      transition: all 0.2s ease-in-out;
     }
   }
 }
