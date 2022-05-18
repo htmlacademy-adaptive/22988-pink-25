@@ -97,12 +97,42 @@
 .main-footer__logo {
   margin-bottom: 33px;
 
+  &:active {
+    opacity: 0.3;
+  }
+
   @media (min-width: $tablet-width) {
     margin-bottom: 5px;
   }
 
   @media (min-width: $desctop-width) {
     margin-bottom: 23px;
+  }
+}
+
+.footer-logotype {
+  fill: var(--darken-color);
+  transition: all 0.2s ease-in-out;
+
+  &--desc {
+    display: none;
+  }
+
+  @media (min-width: $tablet-width) {
+    &:hover {
+      fill: var(--red-color);
+      transition: all 0.2s ease-in-out;
+    }
+  }
+
+  @media (min-width: $desctop-width) {
+    &--desc {
+      display: block;
+    }
+
+    &--undesc {
+      display: none;
+    }
   }
 }
 

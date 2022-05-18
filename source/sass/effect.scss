@@ -34,6 +34,11 @@
       background-image: url("../img/timer.png");
       background-size: 100%;
       background-repeat: no-repeat;
+
+      @media (min-resolution: 2dppx) {
+        background-image: url("../img/timer@2x.png");
+        background-size: 238px auto;
+      }
     }
   }
 
@@ -45,6 +50,11 @@
       width: 298px;
       height: 345px;
       background-image: url("../img/timer-desc.png");
+
+      @media (min-resolution: 2dppx) {
+        background-image: url("../img/timer-desc@2x.png");
+        background-size: 298px auto;
+      }
     }
   }
 }
