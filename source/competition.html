@@ -8,6 +8,7 @@
   <link rel="icon" href="favicon.ico">
   <link rel="icon" href="img/favicons/icon.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" href="img/favicons/apple-icon.png">
+  <link rel="manifest" href="./manifest.webmanifest">
   <link rel="stylesheet" href="css/style.min.css">
 </head>
 
@@ -21,13 +22,13 @@
         <div class="main-nav__logo-wrapper">
           <a class="main-header__logo" href="index.html">
             <svg class="logo-pink-mobile" width="74" height="23">
-              <use xlink:href="img/sprite.svg#logo-header-mobile">
+              <use xlink:href="img/sprite.svg#logo-header-mobile"></use>
             </svg>
             <svg class="logo-pink-tablet" width="145" height="40">
-              <use xlink:href="img/sprite.svg#logo-header-tablet">
+              <use xlink:href="img/sprite.svg#logo-header-tablet"></use>
             </svg>
             <svg class="logo-pink-desctop" width="147" height="40">
-              <use xlink:href="img/sprite.svg#logo-header-desctop">
+              <use xlink:href="img/sprite.svg#logo-header-desctop"></use>
             </svg>
           </a>
           <button class="main-nav__burger" aria-label="Открыть меню">
@@ -95,8 +96,8 @@
         <div class="form-feedback__achivments-inner">
           <fieldset class="form-feedback__fieldset form-feedback__fieldset--achivments">
             <legend class="form-feedback__legend">
-              <p class="form-feedback__legend-text">Ваши безбашенные
-                достижения в путешествии</p>
+              <span class="form-feedback__legend-text">Ваши безбашенные
+                достижения в путешествии</span>
             </legend>
 
             <ul class="form-feedback__list form-feedback__list--column list-reset">
@@ -137,7 +138,7 @@
         <div class="form-feedback__contacts-inner">
           <fieldset class="form-feedback__fieldset form-feedback__fieldset--contacts">
             <legend class="form-feedback__legend form-feedback__legend--contacts">
-              <p class="form-feedback__legend-text mobile-hidden">Контактная информация</p>
+              <span class="form-feedback__legend-text mobile-hidden">Контактная информация</span>
             </legend>
 
             <ul class="form-feedback__list form-feedback__list--string list-reset">
@@ -158,8 +159,8 @@
         <div class="form-feedback__apps-inner">
           <fieldset class="form-feedback__fieldset form-feedback__fieldset--apps">
             <legend class="form-feedback__legend">
-              <p class="form-feedback__legend-text">С каким приложением
-                путешествовали?</p>
+              <span class="form-feedback__legend-text">С каким приложением
+                путешествовали?</span>
             </legend>
             <ul class="form-feedback__list list-reset">
               <li class="form-feedback__apps-item">
@@ -184,7 +185,7 @@
         <div class="form-feedback__emotions-inner">
           <fieldset class="form-feedback__fieldset form-feedback__fieldset--emotions">
             <legend class="form-feedback__legend">
-              <p class="form-feedback__legend-text">Опишите свои эмоции</p>
+              <span class="form-feedback__legend-text">Опишите свои эмоции</span>
             </legend>
             <textarea class="form-feedback__textarea form-feedback__textarea--emotions" name="message"
               placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
@@ -238,6 +239,7 @@
           </a>
         </div>
       </div>
+    </div>
   </footer>
 
   <div class="modalform modalform--error">

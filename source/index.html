@@ -8,6 +8,7 @@
   <link rel="icon" href="favicon.ico">
   <link rel="icon" href="img/favicons/icon.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" href="img/favicons/apple-icon.png">
+  <link rel="manifest" href="./manifest.webmanifest">
   <link rel="stylesheet" href="css/style.min.css">
 </head>
 
@@ -22,13 +23,13 @@
         <div class="main-nav__logo-wrapper">
           <a class="main-header__logo" href="index.html">
             <svg class="logo-pink-mobile" width="74" height="23">
-              <use xlink:href="img/sprite.svg#logo-header-mobile">
+              <use xlink:href="img/sprite.svg#logo-header-mobile"></use>
             </svg>
             <svg class="logo-pink-tablet" width="145" height="40">
-              <use xlink:href="img/sprite.svg#logo-header-tablet">
+              <use xlink:href="img/sprite.svg#logo-header-tablet"></use>
             </svg>
             <svg class="logo-pink-desctop" width="147" height="40">
-              <use xlink:href="img/sprite.svg#logo-header-desctop">
+              <use xlink:href="img/sprite.svg#logo-header-desctop"></use>
             </svg>
           </a>
           <button class="main-nav__burger" aria-label="Открыть меню">
@@ -91,6 +92,7 @@
 
   <main class="main-container">
     <section class="slogan">
+      <h2 class="visually-hidden">Слоган о рекомендации приложения Pink</h2>
       <p class="slogan__text">Устали от серости мегаполиса?</p>
       <p class="slogan__text">Нам есть, что вам <br>
         предложить!</p>
@@ -161,12 +163,12 @@
           <div class="slider__control">
             <button class="reviews__prev" type="button" aria-label="Назад">
               <svg width="22" height="41">
-                <use xlink:href="img/sprite.svg#arrow-prev-slider">
+                <use xlink:href="img/sprite.svg#arrow-prev-slider"></use>
               </svg>
               Предыдущий отзыв</button>
-            <button class="reviews__next" type="button" atia-label="Вперёд">
+            <button class="reviews__next" type="button" aria-label="Вперёд">
               <svg width="22" height="41">
-                <use xlink:href="img/sprite.svg#arrow-next-slider">
+                <use xlink:href="img/sprite.svg#arrow-next-slider"></use>
               </svg>
               Следующий отзыв</button>
           </div>
@@ -327,8 +329,7 @@
         </div>
       </div>
       <div class="main-footer__map">
-        <iframe src="https://yandex.ru/map-widget/v1/-/CCUEYCGZpC" width="100%" height="400" frameborder="0"
-          allowfullscreen="true" style="position: relative;"></iframe>
+        <iframe src="https://yandex.ru/map-widget/v1/-/CCUEYCGZpC" width="1439" height="400" style="position: relative;"></iframe>
       </div>
       <div class="main-footer__social">
         <div class="main-footer__wrapper">

@@ -66,7 +66,7 @@ const createWebp = () => {
 
 // SVG
 const svg = () => {
-  return gulp.src(['source/img/*.svg', '!source/img/sprite.svg'])
+  return gulp.src(['source/img/**/*.svg', '!source/img/sprite.svg'])
   .pipe(svgo())
   .pipe(gulp.dest('build/img'));
 }
@@ -85,7 +85,7 @@ const svg = () => {
 
 // Copy
 
-export const copy = (done) => {
+const copy = (done) => {
   gulp.src([
     'source/fonts/*.{woff2,woff}',
     'source/*.ico',

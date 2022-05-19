@@ -8,6 +8,7 @@
   <link rel="icon" href="favicon.ico">
   <link rel="icon" href="img/favicons/icon.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" href="img/favicons/apple-icon.png">
+  <link rel="manifest" href="./manifest.webmanifest">
   <link rel="stylesheet" href="css/style.min.css">
 </head>
 
@@ -21,13 +22,13 @@
         <div class="main-nav__logo-wrapper">
           <a class="main-header__logo" href="index.html">
             <svg class="logo-pink-mobile" width="74" height="23">
-              <use xlink:href="img/sprite.svg#logo-header-mobile">
+              <use xlink:href="img/sprite.svg#logo-header-mobile"></use>
             </svg>
             <svg class="logo-pink-tablet" width="145" height="40">
-              <use xlink:href="img/sprite.svg#logo-header-tablet">
+              <use xlink:href="img/sprite.svg#logo-header-tablet"></use>
             </svg>
             <svg class="logo-pink-desctop" width="147" height="40">
-              <use xlink:href="img/sprite.svg#logo-header-desctop">
+              <use xlink:href="img/sprite.svg#logo-header-desctop"></use>
             </svg>
           </a>
           <button class="main-nav__burger" aria-label="Открыть меню">
@@ -69,6 +70,8 @@
       <figure class="collection-photo">
         <a class="collection-photo__link collection-photo__link-sticker" href="#" data-sticker-text="Панорама дня">
           <picture>
+            <source type="image/webp" media="(min-width: 1080px)" srcset="img/panorama-desktop.webp 1x, img/panorama-desktop@2x.webp 2x">
+            <source type="image/webp" media="(min-width: 768px)" srcset="img/panorama-tablet.webp 1x, img/panorama-tablet@2x.webp 2x">
             <source media="(min-width: 1080px)" srcset="img/panorama-desktop.jpg 1x, img/panorama-desktop@2x.jpg 2x">
             <source media="(min-width: 768px)" srcset="img/panorama-tablet.jpg 1x, img/panorama-tablet@2x.png 2x">
             <img class="collection-photo__user" src="img/panorama-mobile.jpg" srcset="img/panorama-mobile@2x.jpg 2x" alt="Панорама дня" width="1200"
@@ -96,6 +99,8 @@
         <figure class="collection__image collection-photo">
           <a class="collection-photo__link" href="#">
             <picture>
+              <source type="image/webp" media="(min-width: 1080px)" srcset="img/photo-1-desktop.webp 1x, img/photo-1-desktop@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 768px)" srcset="img/photo-1-tablet.webp 1x, img/photo-1-tablet@2x.webp 2x">
               <source media="(min-width: 1080px)" srcset="img/photo-1-desktop.jpg 1x, img/photo-1-desktop@2x.jpg 2x">
               <source media="(min-width: 768px)" srcset="img/photo-1-tablet.jpg 1x, img/photo-1-tablet@2x.jpg 2x">
               <img class="collection-photo__image" src="img/photo-1-mobile.jpg" srcset="img/photo-1-mobile@2x.png 2x" alt="Панорама дня" width="280" height="180">
@@ -118,6 +123,8 @@
         <figure class="collection__image collection-photo">
           <a class="collection-photo__link" href="#">
             <picture>
+              <source type="image/webp" media="(min-width: 1080px)" srcset="img/photo-2-desktop.webp 1x, img/photo-2-desktop@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 768px)" srcset="img/photo-2-tablet.webp 1x, img/photo-2-tablet@2x.webp 2x">
               <source media="(min-width: 1080px)" srcset="img/photo-2-desktop.jpg 1x, img/photo-2-desktop@2x.jpg 2x">
               <source media="(min-width: 768px)" srcset="img/photo-2-tablet.jpg 1x, img/photo-2-tablet@2x.jpg 2x">
               <img class="collection-photo__image" src="img/photo-2-mobile.jpg" srcset="img/photo-2-mobile@2x.jpg 2x" alt="Барабаны" width="280" height="180">
@@ -139,6 +146,8 @@
         <figure class="collection__image collection-photo">
           <a class="collection-photo__link" href="#">
             <picture>
+              <source type="image/webp" media="(min-width: 1080px)" srcset="img/photo-3-desktop.webp 1x, img/photo-3-desktop@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 768px)" srcset="img/photo-3-tablet.webp 1x, img/photo-3-tablet@2x.webp 2x">
               <source media="(min-width: 1080px)" srcset="img/photo-3-desktop.jpg 1x, img/photo-3-desktop@2x.jpg 2x">
               <source media="(min-width: 768px)" srcset="img/photo-3-tablet.jpg 1x, img/photo-3-tablet@2x.jpg 2x">
               <img class="collection-photo__image" src="img/photo-3-mobile.jpg" srcset="img/photo-3-mobile@2x.jpg 2x" alt="стеклянная краша" width="280"
@@ -161,7 +170,9 @@
         <figure class="collection__image collection-photo">
           <a class="collection-photo__link" href="#">
             <picture>
-              <source media="(min-width: 1080px)" srcset="img/photo-4-desktop.jpg 1x, img/photo-4-desktop@2x.jpg">
+              <source type="image/webp" media="(min-width: 1080px)" srcset="img/photo-4-desktop.webp 1x, img/photo-4-desktop@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 768px)" srcset="img/photo-4-tablet.webp 1x, img/photo-4-tablet@2x.webp 2x">
+              <source media="(min-width: 1080px)" srcset="img/photo-4-desktop.jpg 1x, img/photo-4-desktop@2x.jpg 2x">
               <source media="(min-width: 768px)" srcset="img/photo-4-tablet.jpg 1x, img/photo-4-tablet@2x.jpg 2x">
               <img class="collection-photo__image" src="img/photo-4-mobile.jpg" srcset="img/photo-4-mobile@2x.jpg 2x" alt="Кубанская бахча" width="280"
                 height="180">
@@ -183,6 +194,8 @@
         <figure class="collection__image collection-photo">
           <a class="collection-photo__link" href="#">
             <picture>
+              <source type="image/webp" media="(min-width: 1080px)" srcset="img/photo-5-desktop.webp 1x, img/photo-5-desktop@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 768px)" srcset="img/photo-5-tablet.webp 1x, img/photo-5-tablet@2x.webp 2x">
               <source media="(min-width: 1080px)" srcset="img/photo-5-desktop.jpg 1x, img/photo-5-desktop@2x.jpg 2x">
               <source media="(min-width: 768px)" srcset="img/photo-5-tablet.jpg 1x, img/photo-5-tablet@2x.jpg 2x">
               <img class="collection-photo__image" src="img/photo-5-mobile.jpg" srcset="img/photo-5-mobile@2x.jpg 2x" alt="Над пропастью" width="280" height="180">
@@ -204,6 +217,8 @@
         <figure class="collection__image collection-photo">
           <a class="collection-photo__link" href="#">
             <picture>
+              <source type="image/webp" media="(min-width: 1080px)" srcset="img/photo-6-desktop.webp 1x, img/photo-6-desktop@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 768px)" srcset="img/photo-6-tablet.webp 1x, img/photo-6-tablet@2x.webp 2x">
               <source media="(min-width: 1080px)" srcset="img/photo-6-desktop.jpg 1x, img/photo-6-desktop@2x.jpg 2x">
               <source media="(min-width: 768px)" srcset="img/photo-6-tablet.jpg 1x, img/photo-6-tablet@2x.jpg 2x">
               <img class="collection-photo__image" src="img/photo-6-mobile.jpg" srcset="img/photo-6-mobile@2x.jpg 2x" alt="Крыло самолета в небе" width="280"
@@ -235,6 +250,8 @@
       <div class="filter__wrapper  filter__inner">
         <form class="filter__form" method="post" action="https://echo.htmlacademy.ru">
           <picture class="filter__photo">
+            <source type="image/webp" media="(min-width: 1080px)" srcset="img/filter-photo-desktop.webp 1x, img/filter-photo-desktop@2x.webp 2x">
+            <source type="image/webp" media="(min-width: 768px)" srcset="img/filter-photo-tablet.webp 1x, img/filter-photo-tablet@2x.webp 2x">
             <source media="(min-width: 1080px)" srcset="img/filter-photo-desktop.jpg 1x, img/filter-photo-desktop@2x.jpg 2x">
             <source media="(min-width: 768px)" srcset="img/filter-photo-tablet.jpg 1x, img/filter-photo-tablet@2x.jpg 2x">
             <img class="filter__user-photo" src="img/filter-photo-mobile.jpg" srcset="img/filter-photo-mobile@2x.jpg 2x" alt="Фото для редактирования" width="300"
@@ -326,6 +343,7 @@
           </a>
         </div>
       </div>
+    </div>
   </footer>
 
   <script src="js/script.js"></script>
