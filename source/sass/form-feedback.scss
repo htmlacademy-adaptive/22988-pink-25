@@ -445,6 +445,13 @@
     }
   }
 
+  &:focus {
+    &::before {
+      outline: none;
+      border-color: var(--red-color);
+    }
+  }
+
   &::before {
     content: "";
     position: absolute;
@@ -474,6 +481,12 @@
 .form-feedback__checkbox[type="checkbox"]:checked + .form-feedback__label-checkbox {
   &::after {
     content: "";
+  }
+}
+
+.form-feedback__checkbox[type="checkbox"]:focus + .form-feedback__label-checkbox {
+  &::before {
+    border-color: var(--red-color);
   }
 }
 
