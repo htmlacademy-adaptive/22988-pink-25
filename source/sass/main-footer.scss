@@ -98,10 +98,6 @@
 .main-footer__logo {
   margin-bottom: 33px;
 
-  &:active {
-    opacity: 0.3;
-  }
-
   @media (min-width: $tablet-width) {
     margin-bottom: 5px;
   }
@@ -119,6 +115,18 @@
     display: none;
   }
 
+  &--undesc {
+    fill: var(--darken-color);
+
+    &:hover {
+      fill: var(--red-color);
+    }
+
+    &:active {
+      opacity: 0.3;
+    }
+  }
+
   @media (min-width: $tablet-width) {
     &:hover {
       fill: var(--red-color);
@@ -129,6 +137,10 @@
   @media (min-width: $desctop-width) {
     &--desc {
       display: block;
+
+      &:active {
+        opacity: 0.3;
+      }
     }
 
     &--undesc {

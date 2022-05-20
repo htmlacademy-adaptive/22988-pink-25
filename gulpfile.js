@@ -30,7 +30,7 @@ export const styles = () => {
 }
 
 //HTML
-export const html = () => {
+const html = () => {
   return gulp.src('source/*.html')
   .pipe(htmlmin({ collapseWhitespace: true }))
   .pipe(gulp.dest('build'));
@@ -39,6 +39,7 @@ export const html = () => {
 // Scripts
 const scripts = () => {
    return gulp.src('source/js/*.js')
+  .pipe(rename('script.min.js'))
   .pipe(terser())
   .pipe(gulp.dest('build/js'))
 }
