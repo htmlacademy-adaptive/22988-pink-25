@@ -83,10 +83,6 @@
   margin-bottom: -5px;
   cursor: pointer;
 
-  &:active {
-    opacity: 0.3;
-  }
-
   @media (min-width: $tablet-width) {
     margin-bottom: 10px;
   }
@@ -142,6 +138,17 @@
 }
 
 .logo-pink-mobile {
+  fill: var(--light-color);
+  transition: all 0.2s ease-in-out;
+
+  &:hover {
+    fill: var(--red-color);
+  }
+
+  &:active {
+    fill: rgb(255, 255, 255, 0.3);
+  }
+
   @media (min-width: $tablet-width) {
     display: none;
   }
@@ -153,6 +160,15 @@
 
 .logo-pink-tablet {
   display: none;
+  fill: var(--light-color);
+
+  &:hover {
+    fill: var(--red-color);
+  }
+
+  &:active {
+    fill: rgb(255, 255, 255, 0.3);
+  }
 
   @media (min-width: $tablet-width) {
     display: inline-block;
@@ -174,6 +190,11 @@
     &:hover {
       fill: var(--red-color);
       transition: all 0.2s ease-in-out;
+    }
+
+    &:active {
+      fill: rgb(255, 255, 255, 0.3);
+      opacity: 0.3;
     }
   }
 }

@@ -84,6 +84,18 @@
   border: none;
   cursor: pointer;
 
+  &:hover {
+    .main-nav__burger-line {
+      background-color: var(--red-color);
+    }
+  }
+
+  &:active {
+    .main-nav__burger-line {
+      opacity: 0.3;
+    }
+  }
+
   @media (min-width: $desctop-width) {
     display: none;
   }
