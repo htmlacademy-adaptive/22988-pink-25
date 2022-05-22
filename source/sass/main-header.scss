@@ -2,6 +2,7 @@
   position: relative;
   display: flex;
   justify-content: center;
+  background-color: var(--darken-color);
   background-image: url("../img/bg-mobile.jpg");
   background-size: 100%;
   background-position: 50% 0;
@@ -262,4 +263,3 @@
     line-height: 68px;
   }
 }
-
