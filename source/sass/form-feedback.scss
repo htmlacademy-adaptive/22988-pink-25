@@ -502,6 +502,13 @@
     }
   }
 
+  // &:focus {
+  //   &::before {
+  //     outline: none;
+  //     border-color: var(--darken-color);
+  //   }
+  // }
+
   &:active {
     &::before {
       border-color: var(--red-color);
@@ -541,6 +548,12 @@
 .form-feedback__radio[type="radio"]:checked + .form-feedback__label-radio {
   &::after {
     content: "";
+  }
+}
+
+.form-feedback__radio[type="radio"]:focus + .form-feedback__label-radio {
+  &::before {
+    border-color: var(--darken-color);
   }
 }
 
