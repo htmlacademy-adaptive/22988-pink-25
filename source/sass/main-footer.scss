@@ -93,7 +93,6 @@
     }
 
     iframe {
-      // height: 374px;
       height: 387px;
     }
 
@@ -104,6 +103,11 @@
 
   @media (min-width: $desctop-width) {
     height: 502px;
+    background-image: url("../img/map-desctop.jpg");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/map-desctop@2x.jpg");
+    }
 
     iframe {
       height: 500px;
