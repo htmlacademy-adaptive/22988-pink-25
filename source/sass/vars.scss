@@ -1,6 +1,6 @@
 :root {
   // base
-  --font-family: "Open Sans", sans-serif;
+  --font-family: "Open Sans", "Arial", sans-serif;
 
   // colors
   --light-color: #ffffff;
@@ -14,5 +14,6 @@
 }
 
 // viewports
-$tablet-width: 768px;
+$tablet-width: 660px;
+$updesctop-width: 1079px;
 $desctop-width: 1080px;
