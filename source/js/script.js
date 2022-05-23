@@ -5,7 +5,6 @@ let mapMarker = document.querySelector('.main-footer__map-marker');
 
 
 mainHeader.classList.remove('main-header--nojs');
-mapMarker.classList.remove('main-footer__map-marker');
 
 burger.addEventListener('click', function () {
   if (menu.classList.contains('main-nav--closed')) {
@@ -16,3 +15,7 @@ burger.addEventListener('click', function () {
     menu.classList.remove('main-nav--opened');
   }
 })
+
+if (mapMarker) {
+  mapMarker.style.display="none";
+}
